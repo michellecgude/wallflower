@@ -2,7 +2,7 @@
 const covidURL = "https://api.covid19api.com/summary";
 
 // set potential variables needed:    
-const covidData = document.querySelectorAll(".num-data");
+let covidData = document.querySelectorAll(".num-data");
 const confirmData = document.querySelector(".confirm-num");
 const deathData = document.querySelector(".death-num");
 const recoverData = document.querySelector(".recover-num");
@@ -39,3 +39,7 @@ fetch(covidURL, {headers: {"x-access-token": "5cf9dfd5-3449-485e-b5ae-70a60e9978
         totalrecovData.innerHTML = response.Global.TotalRecovered;
     })
     .catch(err => console.log(`Sorry, the total recovered COVID data isn't available: ${err}`))
+
+// functions
+
+// NOTE: added numeral.js to help format API numeral data... downloaded Numeral.js javascript library... 
