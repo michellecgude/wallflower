@@ -1,7 +1,7 @@
-// COVID DATA API:
+// COVID DATA API URL:
 const covidURL = "https://api.covid19api.com/summary";
 
-// API Variables:    
+// COVID API Variables:    
 let covidData = document.querySelectorAll(".num-data");
 const confirmData = document.querySelector(".confirm-num");
 const deathData = document.querySelector(".death-num");
@@ -33,23 +33,38 @@ fetch(covidURL, {headers: {"x-access-token": "5cf9dfd5-3449-485e-b5ae-70a60e9978
     .catch(err => console.log(`Sorry, the total recovered COVID data isn't available: ${err}`))
 
 
+
+// RANDOM ADVICE API URL:
+const adviceURL = "https://api.adviceslip.com/advice"
+
+// Advice API Variables:
+fetch(adviceURL)
+    .then(response => response.json())
+    .then(response => console.log(`You're lucky today! Here's some advice just for you ${response.slip.advice}`))
+    .catch(err => console.log(`I'm sorry, there's no advice for today ${err}`))
+
+
+
+
+
+
 // JS Interactivity:
-let welcomePrompt = prompt("Welcome to Wallflower. Happy you could join us. Let's get you set up. But first, what name do you go by?");
+// let welcomePrompt = prompt("Welcome to Wallflower. Happy you could join us. Let's get you set up. But first, what name do you go by?");
 
-function mvpGreeting() {
-    let welcomeGreeting = document.querySelector(".headline-text").innerHTML = (`Welcome to Wallflower, ${welcomePrompt}.`);
-    let adviceGreeting = document.querySelector(".advice-header").innerHTML = (`Here's your advice of the day, ${welcomePrompt}:`)
+// function mvpGreeting() {
+//     let welcomeGreeting = document.querySelector(".headline-text").innerHTML = (`Welcome to Wallflower, ${welcomePrompt}.`);
+//     let adviceGreeting = document.querySelector(".advice-header").innerHTML = (`Here's your advice of the day, ${welcomePrompt}:`)
 
-    return {
-        welcomeGreeting,
-        adviceGreeting
-    };
-}
+//     return {
+//         welcomeGreeting,
+//         adviceGreeting
+//     };
+// }
 
-if (welcomePrompt !== null || undefined) {
-        alert(`Welcome in! Let's start recovering from the COVID blues together, ${welcomePrompt}.`)
-        mvpGreeting();
-    }
+// if (welcomePrompt !== null || undefined) {
+//         alert(`Welcome in! Let's start recovering from the COVID blues together, ${welcomePrompt}.`)
+//         mvpGreeting();
+//     }
 
 
 
