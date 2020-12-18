@@ -26,6 +26,7 @@ body {
     "covid-data tbd-content mood-tracker"
     "advice-container advice-container mood-tracker";
     margin: 30px;
+    background-color:rgb(250, 250, 245)
 }
 
 
@@ -48,7 +49,9 @@ body {
     font-size: 60px;
     letter-spacing: 12px;
     text-align: center;
-    /* padding-top: 50px; */
+    padding-top: 50px;
+    padding-right: 400px;
+    margin-right: 50px;
     }
 
     .logo-container { 
