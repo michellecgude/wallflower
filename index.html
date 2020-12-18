@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Title</title>
+	<title>Wallflower</title>
 	<html lang="en">
 	
 	<!-- META DATA -->
@@ -11,20 +11,76 @@
 	
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Piazzolla:wght@400;500;600&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
 
     <!-- CSS STYLE -->
-    <link href="style.css" rel="stylesheet" content-type="text/css">
+    <link href="resources\css\style.css" rel="stylesheet" content-type="text/css">
 
 </head>
 <body>
-<main>
-    <h1>Welcome to wallflower.</h1>
-</main>
 
+<div class="grid-container">
+    <div class="header">
+        <h1 class="headline-text">Welcome to wallflower</h1>
+      <div class="logo-container"></div>
+    </div>
+
+    <div class="covid-data">
+      <div class="covid-data-header">
+          <h2>COVID-19 data:</h2>
+      </div>
+      <div class="confirmed-data-text spacing-covtext">
+          <h4>New confirmed cases:</h4>
+      </div>
+      <div class="deaths-data-text spacing-covtext">
+        <h4>New deaths:</h4>
+      </div>
+      <div class="recovered-data-text spacing-covtext">
+          <h4>Newly recovered cases:</h4>
+      </div>
+      <div class="totalrecov-data-text spacing-covtext">
+          <h4>Total recovered cases:</h4>
+      </div>
+      <div class="num-data confirm-num">0</div>
+      <div class="num-data death-num">0</div>
+      <div class="num-data recover-num">0</div>
+      <div class="num-data totalrecov-num">0</div>
+    </div>
+
+    <div class="mood-tracker">
+      <div class="mood-prompt-container">
+          <h2>How're you feeling today?</h2>
+      </div>
+      <div class="mood-button-container">
+          <button class="btn btnmoods btn-mood1"><p>Happy</p></button>
+          <button class="btn btnmoods btn-mood2"><p>Neutral</p></button>
+          <button class="btn btnmoods btn-mood3"><p>Sad</p></button>
+      </div>
+      <div class="mood-journal-prompt-container">
+          <h3>If you have the time, let's take a moment to reflect. Jot down more about how you're feeling and what's on your mind below.</h3>
+      </div>
+      <div class="mood-journal-text-container">
+          <form>
+              <p class="mood-text-prompt"><em>type your thoughts out here.</em></p> 
+          </form>
+        </div>
+    </div>
+
+    <div class="advice-container">
+      <div class="advice-header">
+          <h2>Advice for the day:</h2>
+        </div>
+      <div class="button-container">
+          <button class="btn btn-advice"><p>click here for another piece of enlightenment.</p></button>
+      </div>
+      <div class="advice-text-container"></div>
+    </div>
+
+    <div class="tbd-content"></div>
+  </div>
 
 <!-- JAVASCRIPT FILE -->
-<script src="script.js"></script>
+<script src="resources\js\script.js"></script>
 
 </body>
 </html>

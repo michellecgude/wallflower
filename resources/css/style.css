@@ -1,9 +1,251 @@
-/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Castoro', serif;
+font-family: 'Piazzolla', serif;
+font-family: 'Work Sans', sans-serif; */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(240, 239, 239);
-    font-family:'Open Sans', sans-serif;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 2px;
+}
+
+.btn {
+    border: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 1.2fr;
+    grid-template-rows: 0.2fr 1.2fr 0.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "header header header"
+    "covid-data tbd-content mood-tracker"
+    "advice-container advice-container mood-tracker";
+    margin: 30px;
+}
+
+
+
+/* header styling */
+.header {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "logo-container .";
+    grid-area: header;
+
+    margin-bottom: 100px;
+}
+
+.headline-text {
+    font-family: "Castoro", sans-serif;
+    font-size: 60px;
+    letter-spacing: 12px;
+    text-align: center;
+    /* padding-top: 50px; */
+    }
+
+    .logo-container { 
+      grid-area: logo-container; 
+    }
+
+
+
+/* covid data styling */
+.covid-data {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      "covid-data-header ."
+      "confirmed-data-text confirm-num"
+      "deaths-data-text death-num"
+      "recovered-data-text recover-num"
+      "totalrecov-data-text totalrecov-num";
+    grid-area: covid-data;
+
+    width: 460px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    border: 2.5px solid lightgray;
+}
+
+    .covid-data-header { 
+      grid-area: covid-data-header; 
+      font-family: "Castoro", sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .spacing-covtext {
+      padding: 30px;
+    }
+
+    .confirmed-data-text { 
+      grid-area: confirmed-data-text; 
+    }
+
+    .deaths-data-text { 
+      grid-area: deaths-data-text; 
+    }
+
+    .recovered-data-text { 
+      grid-area: recovered-data-text; 
+    }
+  
+    .totalrecov-data-text { 
+      grid-area: totalrecov-data-text; 
+    }
+
+    .num-data {
+        padding-top: 30px;
+        text-align: center;
+    }
+  
+    .confirm-num { 
+        grid-area: confirm-num; 
+    }
+    
+    .death-num { 
+        grid-area: death-num; 
+    }
+    
+    .recover-num { 
+        grid-area: recover-num; 
+    }
+    
+    .totalrecov-num { 
+        grid-area: totalrecov-num; 
+    }
+  
+
+/* mood tracker styling */
+.mood-tracker {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr;
+    grid-template-rows: 0.4fr 0.6fr 0.5fr 2.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "mood-prompt-container mood-prompt-container mood-prompt-container"
+      "mood-button-container mood-button-container mood-button-container"
+      "mood-journal-prompt-container mood-journal-prompt-container mood-journal-prompt-container"
+      "mood-journal-text-container mood-journal-text-container mood-journal-text-container";
+    grid-area: mood-tracker;
+
+    /* width: ; */
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px 20px;
+    border: 2.5px solid lightgray;
+}
+
+    .mood-prompt-container { 
+        grid-area: mood-prompt-container; 
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    
+    .mood-button-container { 
+        grid-area: mood-button-container; 
+        padding-left: 200px;
+    }
+        .btnmoods {
+            font-family: "Work Sans";
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 50px;
+        }
+        .btn-mood1 {
+            padding: 40px 25px;
+            margin-right: 60px;
+            background-color:rgb(219, 226, 143);
+        }
+        .btn-mood2 {
+            padding: 40px 15px;
+            margin-right: 60px;
+            background-color:rgb(191, 207, 191);
+        }
+        .btn-mood3 {
+            padding: 40px 35px;
+            background-color:rgb(193, 217, 224);
+        }
+
+
+    .mood-journal-prompt-container { 
+        grid-area: mood-journal-prompt-container; 
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    
+         .mood-journal-text-container { 
+        grid-area: mood-journal-text-container; 
+        border: 3px solid lightgray;
+        margin: 20px 25px;
+        }
+
+        .mood-text-prompt {
+            padding: 30px;
+            font-size: 18px;
+            color:rgb(145, 161, 145);
+        }
+
+    
+
+/* advice styling */
+.advice-container {
+        display: grid;
+        grid-template-columns: 1.2fr 0.5fr 1.3fr;
+        grid-template-rows: 0.4fr 2.4fr 0.3fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "advice-header . ."
+        "advice-text-container advice-text-container advice-text-container"
+        ". . button-container";
+        grid-area: advice-container;
+
+        /* width: ; */
+        margin-top: 50px;
+        margin-left: 50px;
+        padding: 20px 20px;
+        border: 2.5px solid lightgray;
+}
+
+    .advice-header { 
+        font-family: "Castoro", sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        grid-area: advice-header; 
+    }
+    
+    .button-container { 
+        grid-area: button-container; 
+        width: 500px;
+    }
+
+    .btn-advice {
+        padding: 20px;
+        font-family: "Work Sans";
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(214, 214, 214);
+        width: 500px;
+    }
+    
+    .advice-text-container { 
+        grid-area: advice-text-container; 
+    }
+  
+
+/* tbd ??? */
+  .tbd-content { 
+      grid-area: tbd-content; 
 }
