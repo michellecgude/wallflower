@@ -40,7 +40,7 @@ body {
       opacity: 0;
       position: absolute; /* position absolute allows for layering! */
       animation-name: hihellofadeinout;
-      animation-duration: 10s;
+      animation-duration: 7s;
       animation-timing-function: ease-in-out;
       animation-delay: 1s;
 
@@ -51,9 +51,9 @@ body {
         opacity: 0;
         position: absolute; /* position absolute allows for layering! */
         animation-name: hihellofadeinout;
-        animation-duration: 9s;
+        animation-duration: 7s;
         animation-timing-function: ease-in-out;
-        animation-delay: 4s;
+        animation-delay: 3s;
     }
     
     @keyframes hihellofadeinout {
@@ -71,7 +71,7 @@ body {
         animation-name: loginfadein;
         animation-duration: 6s;
         animation-fill-mode: forwards;
-        animation-delay: 13s;
+        animation-delay: 10s;
     }
 
     @keyframes loginfadein {
@@ -82,9 +82,11 @@ body {
     /* this is the div that says, "nice to meet you" after login input */
     .wallflower-greeting {
         display: none;
-        z-index: -1;
     }
     
+    .welcome-to-wallflower {
+        display: none;
+    }
 
 
 
@@ -142,7 +144,7 @@ body {
     margin-bottom: 100px;
 }
 
-.headline-text {
+#headline-text {
     font-family: "Castoro", sans-serif;
     font-size: 60px;
     letter-spacing: 12px;
@@ -150,11 +152,20 @@ body {
     padding-top: 50px;
     padding-right: 400px;
     margin-right: 50px;
+    opacity: 0;
+    animation: howareyou ease 8s;
+}
+
+    @keyframes howareyou {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 
     .logo-container { 
       grid-area: logo-container; 
     }
+
+
 
 
 

@@ -23,8 +23,6 @@
 
 </head>
 <body>
-<h1 class="testme">henlo</h1>
-<button class="testbutt">clickmefortest!</button>
 <div class="greeting-container">
    <div class="hello-hook">
 <h1 class="first-hook">We're living in a time of uncertainty.<br>
@@ -32,19 +30,15 @@
 <h1 class="second-hook"><br>It's about time you unwind without feeling like an island.</h1>
    </div>
    <div class="wallflower-greeting">
-       <h1 id="welcome-to-wallflower"></h1>
+       <h1 id="greeting"></h1>
+   </div>
+   <div class="welcome-to-wallflower">
+       <h1 id="welcome-in"></h1>
    </div>
     <div class="login-info">
-<h2>Let's get you comfortable. What name do you go by?</h2>
+<h2 id="login-prompt">Let's get you comfortable. What name do you go by?</h2>
 
-<!--action takes you to the html you want to visit. Using "query string" to capture name data.-->
-<!-- THIS FORM REDIRECTED TO INDEX HTML. LETS TRY FADE. -->
-<!-- <form name="login-name" action="index.html" method="GET"> 
-    <input id="put-name" name="enter-name" type="text" placeholder="Type your name here.">
-    <button id="greet-button" type="submit" placeholder="">Welcome to the club.</button>
-</form> -->
-
-<form name="login-name"  method="GET"> 
+<form id="login-form" name="login-name" method="GET"> 
     <input id="put-name" name="enter-name" type="text" placeholder="Type your name here.">
     <button id="greet-button" type="submit" placeholder="">Welcome to the club.</button>
 </form>
@@ -53,6 +47,6 @@
   </div>
 
 <!-- JAVASCRIPT FILES -->
-<script src="resources\js\script.js"></script>
+<script src="resources\js\welcomescript.js"></script>
 </body>
 </html>
