@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Welcome to Wallflower.</title>
+	<html lang="en">
+	
+	<!-- META DATA -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Piazzolla:wght@400;500;600&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE -->
+    <link href="resources\css\style.css" rel="stylesheet" content-type="text/css">
+
+    <!-- JQUERY -->
+    <script src="resources\data\node_modules\jquery\dist\jquery.min.js"></script>
+
+
+</head>
+<body>
+<h1 class="testme">henlo</h1>
+<button class="testbutt">clickmefortest!</button>
+<div class="greeting-container">
+   <div class="hello-hook">
+<h1 class="first-hook">We're living in a time of uncertainty.<br>
+</h1>
+<h1 class="second-hook"><br>It's about time you unwind without feeling like an island.</h1>
+   </div>
+   <div class="wallflower-greeting">
+       <h1 id="welcome-to-wallflower"></h1>
+   </div>
+    <div class="login-info">
+<h2>Let's get you comfortable. What name do you go by?</h2>
+
+<!--action takes you to the html you want to visit. Using "query string" to capture name data.-->
+<!-- THIS FORM REDIRECTED TO INDEX HTML. LETS TRY FADE. -->
+<!-- <form name="login-name" action="index.html" method="GET"> 
+    <input id="put-name" name="enter-name" type="text" placeholder="Type your name here.">
+    <button id="greet-button" type="submit" placeholder="">Welcome to the club.</button>
+</form> -->
+
+<form name="login-name"  method="GET"> 
+    <input id="put-name" name="enter-name" type="text" placeholder="Type your name here.">
+    <button id="greet-button" type="submit" placeholder="">Welcome to the club.</button>
+</form>
+
+    </div>
+  </div>
+
+<!-- JAVASCRIPT FILES -->
+<script src="resources\js\script.js"></script>
+</body>
+</html>

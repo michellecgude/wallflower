@@ -20,13 +20,15 @@
 </head>
 <body>
 
+
 <div class="grid-container">
     <div class="header">
         <!-- <h1 class="headline-text">Welcome to wallflower.</h1> -->
-        <h1 class="headline-text"></h1>
+        <h1 id="headline-text"></h1>
       <div class="logo-container"></div>
     </div>
 
+    <div class="covid-overlay">
     <div class="covid-data">
       <div class="covid-data-header">
           <h2>COVID-19 data:</h2>
@@ -48,6 +50,7 @@
       <div class="num-data recover-num">0</div>
       <div class="num-data totalrecov-num">0</div>
     </div>
+    </div>
 
     <div class="mood-tracker">
       <div class="mood-prompt-container">
@@ -62,10 +65,8 @@
           <h3>If you have the time, let's take a moment to reflect. Jot down more about how you're feeling and what's on your mind below.</h3>
       </div>
       <div class="mood-journal-text-container">
-          <form>
-              <p class="mood-text-prompt"><em>type your thoughts out here.</em></p> 
-          </form>
-        </div>
+        <textarea name="mood-journal" cols="50" rows="10"></textarea>
+      </div>
     </div>
 
     <div class="advice-container">

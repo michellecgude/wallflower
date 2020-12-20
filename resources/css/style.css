@@ -17,6 +17,99 @@ body {
     letter-spacing: 2px;
 }
 
+/* welcome to wallflower styling: */
+
+
+.greeting-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.6fr 0.8fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "hello-hook"
+      "login-info"
+      ".";
+  }
+/* the animation-play-state function could be important when using buttons, for ref: https://bit.ly/3nBfiuB */
+
+  /* this is the div that greets with a hook sentence to draw user in. should fade out after seconds... */
+  /* fade in quickly, stay faded, and then fade out after reasonable time */
+  .first-hook { 
+      grid-area: first-hook; 
+      opacity: 0;
+      position: absolute; /* position absolute allows for layering! */
+      animation-name: hihellofadeinout;
+      animation-duration: 10s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+
+    }
+
+.second-hook { 
+        grid-area: first-hook; 
+        opacity: 0;
+        position: absolute; /* position absolute allows for layering! */
+        animation-name: hihellofadeinout;
+        animation-duration: 9s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+    }
+    
+    @keyframes hihellofadeinout {
+        0% { opacity: 0; }
+        25% { opacity: 1; }
+        65% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    
+    /* this then fades in after hello-hook fades out, prompting them to give a name. */
+    .login-info { 
+        grid-area: login-info;
+        opacity: 0;
+        position: absolute; 
+        animation-name: loginfadein;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
+        animation-delay: 13s;
+    }
+
+    @keyframes loginfadein {
+        0%, 100% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    
+    /* this is the div that says, "nice to meet you" after login input */
+    .wallflower-greeting {
+        display: none;
+        z-index: -1;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn {
     border: none;
 }
@@ -115,6 +208,9 @@ body {
     .num-data {
         padding-top: 30px;
         text-align: center;
+        font-family: "Piazzolla";
+        font-size: 18px;
+        letter-spacing: 2px;
     }
   
     .confirm-num { 
@@ -204,6 +300,7 @@ body {
             font-size: 18px;
             color:rgb(145, 161, 145);
         }
+        
 
     
 
