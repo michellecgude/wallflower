@@ -50,7 +50,7 @@ fetch(covidURL, {headers: {"x-access-token": "5cf9dfd5-3449-485e-b5ae-70a60e9978
 const adviceURL = "https://api.adviceslip.com/advice"
 
 // // Advice API Variables:
-const adviceText = document.querySelector(".advice-text");
+const adviceText = document.querySelector(".advice-text-api");
 const adviceButton = document.querySelector("#btn-advice");
 
 

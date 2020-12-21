@@ -451,7 +451,7 @@ button {
       ". .";
     grid-area: logo-space;
     font-family: "Inknut Antiqua", serif;
-    font-size: 18px;
+    font-size: 10px;
   }
   
   .mood-tracker-ui {
@@ -464,6 +464,13 @@ button {
     grid-area: mood-tracker-ui;
   }
   
+.trck { 
+ width: 32px;
+ height: 32px;
+ border: solid 10px lightgrey;
+ border-radius: 50%;
+}
+
   .happy { grid-area: happy; }
   
   .empowered { grid-area: empowered; }
@@ -484,7 +491,9 @@ button {
   
   .anxious { grid-area: anxious; }
   
-  .ui-greeting-text { grid-area: ui-greeting-text; }
+  .ui-greeting-text { 
+      font-family: "Halant";
+      grid-area: ui-greeting-text; }
   
   .covid-data {
     display: grid;
@@ -500,23 +509,42 @@ button {
     grid-area: covid-data;
   }
   
-  .covid-data-header { grid-area: covid-data-header; }
+  .covid-data-header { 
+      grid-area: covid-data-header; }
+
+  .txtfmt { 
+    font-family: "Halant"; }
   
-  .confirmed-text { grid-area: confirmed-text; }
+  .confirmed-text { 
+      grid-area: confirmed-text; }
   
-  .death-text { grid-area: death-text; }
+  .death-text { 
+      grid-area: death-text; }
   
-  .recovered-text { grid-area: recovered-text; }
+  .recovered-text { 
+      grid-area: recovered-text; }
   
-  .totalrecovered-text { grid-area: totalrecovered-text; }
+  .totalrecovered-text { 
+      grid-area: totalrecovered-text; }
   
-  .confirm-num { grid-area: confirm-num; }
+
+
+    .num-data { 
+        font-family: "Space Mono";
+    }
+
+
+  .confirm-num { 
+      grid-area: confirm-num; }
   
-  .death-num { grid-area: death-num; }
+  .death-num { 
+      grid-area: death-num; }
   
-  .recov-num { grid-area: recov-num; }
+  .recov-num { 
+      grid-area: recov-num; }
   
-  .totalrecov-num { grid-area: totalrecov-num; }
+  .totalrecov-num { 
+      grid-area: totalrecov-num; }
   
   .advice-snippets {
     display: grid;
@@ -530,9 +558,13 @@ button {
     grid-area: advice-snippets;
   }
   
-  .advice-snippets-header { grid-area: advice-snippets-header; }
+  .advice-snippets-header { 
+      font-family: "Tenor Sans";
+      grid-area: advice-snippets-header; }
   
-  .advice-text-api { grid-area: advice-text-api; }
+  .advice-text-api { 
+      font-family: "Space Mono";
+      grid-area: advice-text-api; }
   
   .advice-button-container {
     display: grid;
@@ -544,3 +576,7 @@ button {
     grid-area: advice-button-container;
   }
   
+  .btn-advice {
+      font-size: 13px;
+      width: 375px;
+  }
