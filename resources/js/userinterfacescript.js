@@ -51,7 +51,7 @@ const adviceURL = "https://api.adviceslip.com/advice"
 
 // // Advice API Variables:
 const adviceText = document.querySelector(".advice-text-api");
-const adviceButton = document.querySelector("#btn-advice");
+const adviceButton = document.querySelector(".btn-advice");
 
 
 
@@ -76,6 +76,17 @@ adviceButton.onclick = function (event) {
     .catch(err => console.log(`I'm sorry, there's no advice for today ${err}`))
 }
 
-
 // FUTURE JQUERY SCRIPT WILL GO HERE.
-document.getElementById("headline-text").innerHTML = ("Hey there, Michelle."); // parses string to just showcase data.
+document.querySelector("body > div > div.ui-greeting-text > h2").innerHTML = ("Hey there, Michelle."); // parses string to just showcase data.
+
+
+// creates a button for the divs tracker, appends to document by class.
+$(document).ready(function() {
+    for (i = 1; i <= 1; i++) {
+        $("<button/>", {
+            click: function() {
+                document.trck.style.color = 'red';
+            }
+        }).appendTo(".trck");
+    }
+});
