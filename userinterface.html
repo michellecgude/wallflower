@@ -2,13 +2,15 @@
 <html>
 <head>
 
-	<title>Wallflower Interface</title>
+	<title>Wallflower Home | Interface</title>
 	<html lang="en">
-	
+  
+  
 	<!-- META DATA -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	
+  
+  
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Piazzolla:wght@400;500;600&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
@@ -22,61 +24,74 @@
     <!-- CSS STYLE -->
     <link href="resources\css\style.css" rel="stylesheet" content-type="text/css">
 
+
     <!-- JQUERY -->
     <script src="resources\data\node_modules\jquery\dist\jquery.min.js"></script>
 
 </head>
 <body>
 
-
-<div class="grid-container">
-    <div class="header">
-        <h1 id="headline-text"></h1>
-      <div class="logo-container"><h1 id="logo-wlf">wallflower</h1></div>
+  <div class="main-ui-content">
+    <div class="logo-space">
+      <h1>wallflower</h1>
     </div>
 
-    <div class="covid-overlay">
+    <div class="mood-tracker-ui">
+      <div class="happy"></div>
+      <div class="empowered"></div>
+      <div class="comfortable"></div>
+      <div class="content"></div>
+      <div class="neutral"></div>
+      <div class="sad"></div>
+      <div class="overwhelmed"></div>
+      <div class="stressed"></div>
+      <div class="worried"></div>
+      <div class="anxious"></div>
+    </div>
+
+    <div class="ui-greeting-text">
+      <h2>Hey there, Michelle.</h2> <!-- should be filled with localStorage var, dummy for now. -->
+    </div>
+
     <div class="covid-data">
       <div class="covid-data-header">
-          <h2>COVID-19 data:</h2>
+        <h3>here's the COVID-19 data for today:</h3>
       </div>
-      <div class="confirmed-data-text spacing-covtext">
-          <h4>New confirmed cases:</h4>
+      <div class="confirmed-text">
+        <h4>New confirmed cases:</h4>
       </div>
-      <div class="deaths-data-text spacing-covtext">
+      <div class="death-text">
         <h4>New deaths:</h4>
       </div>
-      <div class="recovered-data-text spacing-covtext">
-          <h4>Newly recovered cases:</h4>
+      <div class="recovered-text">
+        <h4>Newly recovered cases:</h4>
       </div>
-      <div class="totalrecov-data-text spacing-covtext">
-          <h4>Total recovered cases:</h4>
+      <div class="totalrecovered-text">
+        <h4>Total recovered cases:</h4>
       </div>
+
       <div class="num-data confirm-num">0</div>
       <div class="num-data death-num">0</div>
       <div class="num-data recover-num">0</div>
       <div class="num-data totalrecov-num">0</div>
     </div>
-    </div>
 
-    <div class="advice-container">
-      <div class="advice-header">
-          <!-- <h2>Advice for the day:</h2> -->
-          <h2></h2>
-        </div>
-      <div class="button-container">
-          <button class="btn btn-advice"><p>click here for another piece of enlightenment.</p></button>
+    <div class="advice-snippets">
+      <div class="advice-snippets-header">
+        <h3>Here's your little pocket of sunshine for today:</h3>
       </div>
-      <div class="advice-text-container">
-          <h2 class="quote1">“</h2>
-          <div class="advice-text"></div><h2 class="quote2">”</h2>  
+      <div class="advice-text-api">
+        <!-- API Advice will populate this container. -->
+      </div>
+      <div class="advice-button-container">
+        <button class="btn btn-advice"><p>Feeling lucky? Click here for more.</p></button>
       </div>
     </div>
-
-    <div class="tbd-content"></div>
   </div>
 
-<!-- JAVASCRIPT FILES -->
-<script src="resources\js\userinterfacescript.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="resources\js\userinterfacescript.js"></script>
+
 </body>
 </html>
+

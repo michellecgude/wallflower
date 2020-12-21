@@ -1,5 +1,3 @@
-// - - - USER INTERFACE SCRIPT - - - //
-
 // // COVID DATA API URL:
 const covidURL = "https://api.covid19api.com/summary";
 
@@ -53,7 +51,9 @@ const adviceURL = "https://api.adviceslip.com/advice"
 
 // // Advice API Variables:
 const adviceText = document.querySelector(".advice-text");
-const adviceButton = document.querySelector(".btn-advice");
+const adviceButton = document.querySelector("#btn-advice");
+
+
 
 // // Fetch API Data:
 // // generic quote fetch
