@@ -13,7 +13,7 @@ $("#greet-button").click(function(event) {
     $(".welcome-to-wallflower").delay(900).fadeIn(4000).fadeOut(3000);
 
     // welcome to wallflower fade-in greeting:
-    document.getElementById("greeting").innerHTML = (`Nice to meet you, ${window.location.search.substring(12)}.`); // parses string to just showcase data.
+    document.getElementById("greeting").innerHTML = (`Nice to meet you, Jane${window.location.search.substring(12)}.`); // parses string to just showcase data.
     document.getElementById("welcome-in").innerHTML = ("Welcome to Wallflower."); // parses string to just showcase data.
 
 

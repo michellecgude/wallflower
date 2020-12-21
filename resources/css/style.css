@@ -13,11 +13,27 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
     letter-spacing: 2px;
 }
 
-/* welcome to wallflower styling: */
+button, input {
+    border: none;
+    padding: 10px;
+    font-family: "Castoro";
+    letter-spacing: 3px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+input {
+    margin-right: 20px;
+    width: 500px;
+}
+
+button {
+    margin: 20px;
+    left: 500px;
+}
 
 
 .greeting-container {
@@ -30,15 +46,20 @@ body {
       "hello-hook"
       "login-info"
       ".";
-  }
-/* the animation-play-state function could be important when using buttons, for ref: https://bit.ly/3nBfiuB */
+    }
 
-  /* this is the div that greets with a hook sentence to draw user in. should fade out after seconds... */
-  /* fade in quickly, stay faded, and then fade out after reasonable time */
+    .hello-hook {
+        font-family: "Piazzolla";
+        padding: 100px;
+        width: 700px;
+    }
+
+
   .first-hook { 
       grid-area: first-hook; 
       opacity: 0;
-      position: absolute; /* position absolute allows for layering! */
+      position: relative;
+      font-size: 45px;
       animation-name: hihellofadeinout;
       animation-duration: 7s;
       animation-timing-function: ease-in-out;
@@ -49,11 +70,12 @@ body {
 .second-hook { 
         grid-area: first-hook; 
         opacity: 0;
-        position: absolute; /* position absolute allows for layering! */
+        position: relative;
+        font-size: 45px;
         animation-name: hihellofadeinout;
         animation-duration: 7s;
         animation-timing-function: ease-in-out;
-        animation-delay: 3s;
+        animation-delay: 2s;
     }
     
     @keyframes hihellofadeinout {
@@ -68,6 +90,9 @@ body {
         grid-area: login-info;
         opacity: 0;
         position: absolute; 
+        padding: 300px;
+        font-family: "Piazzolla";
+        font-size: 18px;
         animation-name: loginfadein;
         animation-duration: 6s;
         animation-fill-mode: forwards;
@@ -82,10 +107,19 @@ body {
     /* this is the div that says, "nice to meet you" after login input */
     .wallflower-greeting {
         display: none;
+        position: absolute;
+        padding: 200px;
+        margin: 0 auto;
+        font-family: "Piazzolla";
     }
     
     .welcome-to-wallflower {
         display: none;
+        position: absolute;
+        padding-top: 250px;
+        padding-left: 200px;
+        margin: 0 auto;
+        font-family: "Piazzolla";
     }
 
 
