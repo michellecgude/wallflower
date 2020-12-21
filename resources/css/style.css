@@ -7,6 +7,8 @@ font-family: 'Space Grotesk', sans-serif;
 
 */
 
+
+/* UNIVERSAL STYLING: */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,12 @@ font-family: 'Space Grotesk', sans-serif;
 
 body {
     letter-spacing: 2px;
+    height: 100%;
 }
+
+
+
+/* INDEX.HTML (AKA, WELCOME PAGE) STYLING */
 
 button, input {
     border: none;
@@ -35,6 +42,10 @@ button {
     left: 500px;
 }
 
+#wlf-welcome {
+    font-family: "Inknut Antiqua";
+}
+
 
 .greeting-container {
     display: grid;
@@ -46,12 +57,16 @@ button {
       "hello-hook"
       "login-info"
       ".";
+      width: fit-content;
+      /* margin-top: 500px; */
+      margin: 0 auto;
     }
 
     .hello-hook {
         font-family: "Piazzolla";
         padding: 100px;
-        width: 700px;
+        /* width: 700px;
+        margin: 0 auto; */
     }
 
 
@@ -124,27 +139,310 @@ button {
 
 
 
+/* HOW ARE YOU PAGE STYLING? */
+
+.haybuttons {
+    opacity: 0;
+}
+
+#how-are-you-container { 
+	overflow:hidden;
+	background-color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:1440px;
+	height:1024px;
+	position:absolute;
+}
+#empowered { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:401px;
+	top:432px;
+}
+#overwhelmed { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:401px;
+	top:634px;
+}
+#comfortable { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:660px;
+	top:432px;
+}
+#stressed { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:660px;
+	top:634px;
+}
+#content { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:919px;
+	top:432px;
+}
+#worried { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:919px;
+	top:634px;
+}
+#neutral { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:1178px;
+	top:432px;
+}
+#anxious { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:1178px;
+	top:634px;
+}
+#happy { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:142px;
+	top:432px;
+}
+#sad { 
+	border-radius:500px;
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	opacity:1;
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:142px;
+	top:634px;
+}
+#logo { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:128px;
+	height:34px;
+	position:absolute;
+	left:10px;
+	top:7px;
+	font-family:Inknut Antiqua;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+#how-are-you { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:721px;
+	height:83px;
+	position:absolute;
+	left:359px;
+	top:279px;
+	font-family:Halant;
+	text-align:center;
+	font-size:55px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+
+#happytxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:96px;
+	top:478px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#sadtxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:95px;
+	top:685px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#overwhelmedtxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:354px;
+	top:685px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#stressedtxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:215px;
+	height:34px;
+	position:absolute;
+	left:612px;
+	top:685px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#worriedtxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:873px;
+	top:685px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#anxioustxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:1131px;
+	top:685px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#empoweredtxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:354px;
+	top:481px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#comfortabletxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:215px;
+	height:34px;
+	position:absolute;
+	left:612px;
+	top:481px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#contenttxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:872px;
+	top:481px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
+
+#neutraltxt { 
+	color:rgba(0, 0, 0, 1);
+	opacity:1;
+	width:214px;
+	height:34px;
+	position:absolute;
+	left:1131px;
+	top:478px;
+	font-family:Tenor Sans;
+	text-align:center;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:undefined;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* USER INTERFACE STYLING */
+#logo-wlf {
+    font-family: "Inknut Antiqua";
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .btn {
     border: none;
@@ -179,15 +477,16 @@ button {
 }
 
 #headline-text {
-    font-family: "Castoro", sans-serif;
-    font-size: 60px;
+    font-family: "Inknut Antiqua", sans-serif;
+    font-size: 30px;
     letter-spacing: 12px;
     text-align: center;
     padding-top: 50px;
     padding-right: 400px;
     margin-right: 50px;
-    opacity: 0;
+    /* opacity: 0; */
     animation: howareyou ease 8s;
+    animation-timing-function: forwards;
 }
 
     @keyframes howareyou {
@@ -220,17 +519,16 @@ button {
     width: 460px;
     padding: 20px 20px;
     margin-left: 50px;
-    border: 2.5px solid lightgray;
 }
 
     .covid-data-header { 
       grid-area: covid-data-header; 
-      font-family: "Castoro", sans-serif;
-      font-size: 22px;
-      font-weight: bold;
+      font-family: "Tenor Sans", sans-serif;
+      font-size: 14px;
     }
 
     .spacing-covtext {
+      font-family: "Halant";
       padding: 30px;
     }
 
@@ -253,7 +551,7 @@ button {
     .num-data {
         padding-top: 30px;
         text-align: center;
-        font-family: "Piazzolla";
+        font-family: "Space Mono";
         font-size: 18px;
         letter-spacing: 2px;
     }
@@ -277,7 +575,7 @@ button {
 
 /* mood tracker styling */
 .mood-tracker {
-    display: grid;
+    display: none;
     grid-template-columns: 1.1fr 0.9fr 1fr;
     grid-template-rows: 0.4fr 0.6fr 0.5fr 2.5fr;
     gap: 0px 0px;
@@ -292,7 +590,6 @@ button {
     margin-right: 50px;
     margin-left: 50px;
     padding: 20px 20px;
-    border: 2.5px solid lightgray;
 }
 
     .mood-prompt-container { 
@@ -336,7 +633,6 @@ button {
     
          .mood-journal-text-container { 
         grid-area: mood-journal-text-container; 
-        border: 3px solid lightgray;
         margin: 20px 25px;
         }
 
@@ -365,7 +661,6 @@ button {
         margin-top: 50px;
         margin-left: 50px;
         padding: 20px 20px;
-        border: 2.5px solid lightgray;
 }
 
     .advice-header { 
@@ -394,14 +689,12 @@ button {
         grid-area: advice-text-container; 
         padding-top: 50px;
         padding-left: 30px;
-        font-size: 30px;
-        font-style: italic;
+        font-family: "Space Mono";
         letter-spacing: 3px;
     }
 
     .advice-text {
         padding-left: 80px;
-        color: rgba(170, 158, 158, 0.904);
     }
 
     .quote1 .quote2 {
@@ -423,3 +716,4 @@ button {
   .tbd-content { 
       grid-area: tbd-content; 
 }
+

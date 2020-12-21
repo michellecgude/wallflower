@@ -78,4 +78,4 @@ adviceButton.onclick = function (event) {
 
 
 // FUTURE JQUERY SCRIPT WILL GO HERE.
-document.getElementById("headline-text").innerHTML = ("How're you feeling today?"); // parses string to just showcase data.
+document.getElementById("headline-text").innerHTML = ("Hey there, Michelle."); // parses string to just showcase data.
