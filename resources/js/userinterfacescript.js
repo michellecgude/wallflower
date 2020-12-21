@@ -77,16 +77,24 @@ adviceButton.onclick = function (event) {
 }
 
 // FUTURE JQUERY SCRIPT WILL GO HERE.
-document.querySelector("body > div > div.ui-greeting-text > h2").innerHTML = ("Hey there, Michelle."); // parses string to just showcase data.
+document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = ("Hey there, Michelle."); // parses string to just showcase data.
 
 
 // creates a button for the divs tracker, appends to document by class.
-$(document).ready(function() {
-    for (i = 1; i <= 1; i++) {
-        $("<button/>", {
-            click: function() {
-                document.trck.style.color = 'red';
-            }
-        }).appendTo(".trck");
-    }
-});
+// $(document).ready(function() {
+//     for (i = 1; i <= 1; i++) {
+//         $("<button/>", {
+//             "class" : "button-ui",
+//         }).appendTo(".trck");
+//     }
+// });
+
+// for every ".trck" element, iterate a link tag.
+// $(document).ready(function() {
+//     for (i = 1; i <= 1; i++) {
+//         $("<a href=# id=button-link>", {
+//         }).appendTo(".trck");
+//     }
+// });
+
+// jquery hover() method for ui functionality of mood tracker

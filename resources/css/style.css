@@ -452,6 +452,8 @@ button {
     grid-area: logo-space;
     font-family: "Inknut Antiqua", serif;
     font-size: 10px;
+    text-align: center;
+    padding: 25px;
   }
   
   .mood-tracker-ui {
@@ -460,39 +462,97 @@ button {
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "happy empowered comfortable content neutral sad overwhelmed stressed worried anxious";
+      "happy empowered comfortable contant neutral sad overwhelmed stressed worried anxious";
     grid-area: mood-tracker-ui;
   }
   
-.trck { 
- width: 32px;
- height: 32px;
- border: solid 10px lightgrey;
+.button-ui { 
+ width: 40px;
+ height: 40px;
+ background-color: rgb(201, 201, 201);
  border-radius: 50%;
+ transition: ease-in-out;
+ transition-duration: 0.7s;
 }
 
-  .happy { grid-area: happy; }
+
+/* want these buttons to have an interactive ui that responds to saved data */
+/* for now, i'll just use dummy ui/hover to illustrate idea. */
+.happy { 
+     grid-area: happy; }
+#happybt:hover {
+    background-color: rgb(226, 226, 113);
+}
+
+  .empowered { 
+      grid-area: empowered; }
+
+      #empoweredbt:hover {
+        background-color: rgb(226, 186, 113);
+    }
+      
+  .comfortable { 
+      grid-area: comfortable; }
+      #comfortablebt:hover {
+        background-color: rgb(149, 202, 105);
+    }
+
+  .contant { 
+      grid-area: contant; }
+      #contantbt:hover {
+        background-color: rgb(148, 216, 205);
+    }
   
-  .empowered { grid-area: empowered; }
+
+  .neutral { 
+      grid-area: neutral; }
+      #neutralbt:hover {
+        background-color: rgb(147, 175, 171);
+    }
   
-  .comfortable { grid-area: comfortable; }
+
+  .sad { 
+      grid-area: sad; }
+      #sadbt:hover {
+        background-color: rgb(129, 171, 219)
+    }
   
-  .content { grid-area: content; }
+
+  .overwhelmed { 
+      grid-area: overwhelmed; }
+      #overwhelmedbt:hover {
+        background-color: rgb(211, 150, 160);
+    }
   
-  .neutral { grid-area: neutral; }
+
+  .stressed { 
+      grid-area: stressed; }
+      #stressedbt:hover {
+        background-color: rgb(129, 129, 93);
+    }
   
-  .sad { grid-area: sad; }
+
+  .worried { 
+      grid-area: worried; }
+      #worriedbt:hover {
+        background-color: rgb(220, 236, 71);
+    }
   
-  .overwhelmed { grid-area: overwhelmed; }
+
+  .anxious { 
+      grid-area: anxious; }
+      #anxiousbt:hover {
+        background-color: rgb(226, 113, 113);
+    }
   
-  .stressed { grid-area: stressed; }
-  
-  .worried { grid-area: worried; }
-  
-  .anxious { grid-area: anxious; }
-  
+
+
+
   .ui-greeting-text { 
       font-family: "Halant";
+      font-size: 25px;
+      font-weight: bolder;
+      text-align: center;
       grid-area: ui-greeting-text; }
   
   .covid-data {
@@ -507,12 +567,17 @@ button {
       "recovered-text recov-num"
       "totalrecovered-text totalrecov-num";
     grid-area: covid-data;
+    padding-top: 150px;
+    padding-left: 300px;
   }
   
   .covid-data-header { 
+      font-family: "Tenor Sans";
       grid-area: covid-data-header; }
 
   .txtfmt { 
+    padding-top: 60px;
+    padding-left: 70px;
     font-family: "Halant"; }
   
   .confirmed-text { 
@@ -556,6 +621,9 @@ button {
       "advice-text-api"
       "advice-button-container";
     grid-area: advice-snippets;
+    padding-top: 150px;
+    padding-right: 300px;
+    padding-left: 150px;
   }
   
   .advice-snippets-header { 
@@ -564,7 +632,20 @@ button {
   
   .advice-text-api { 
       font-family: "Space Mono";
+      padding-top: 80px;
+      padding-left: 80px;
+      width: 500px;
       grid-area: advice-text-api; }
+
+    #quote1 { 
+        padding-top: 50px;
+        font-family: "Castoro";
+    }
+
+    #quote2 { 
+        font-family: "Castoro";
+        padding-left: 500px;
+    }
   
   .advice-button-container {
     display: grid;
@@ -579,4 +660,5 @@ button {
   .btn-advice {
       font-size: 13px;
       width: 375px;
+      background-color: rgb(194, 205, 209);
   }

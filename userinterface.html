@@ -37,24 +37,44 @@
     </div>
 
     <div class="mood-tracker-ui">
-      <div class="happy trck"></div>
-      <div class="empowered trck"></div>
-      <div class="comfortable trck"></div>
-      <div class="content trck"></div>
-      <div class="neutral trck"></div>
-      <div class="sad trck"></div>
-      <div class="overwhelmed trck"></div>
-      <div class="stressed trck"></div>
-      <div class="worried trck"></div>
-      <div class="anxious trck"></div>
+      <div class="happy trck">
+        <button class="button-ui" id="happybt"></button>
+      </div>
+      <div class="empowered trck">
+        <button class="button-ui" id="empoweredbt"></button>
+      </div>
+      <div class="comfortable trck">
+        <button class="button-ui" id="comfortablebt"></button>
+      </div>
+      <div class="contant trck">
+        <button class="button-ui" id="contantbt"></button>
+      </div>
+      <div class="neutral trck">
+        <button class="button-ui" id="neutralbt"></button>
+      </div>
+      <div class="sad trck">
+        <button class="button-ui" id="sadbt"></button>
+      </div>
+      <div class="overwhelmed trck">
+        <button class="button-ui" id="overwhelmedbt"></button>
+      </div>
+      <div class="stressed trck">
+        <button class="button-ui" id="stressedbt"></button>
+      </div>
+      <div class="worried trck">
+        <button class="button-ui" id="worriedbt"></button>
+      </div>
+      <div class="anxious trck">
+        <button class="button-ui" id="anxiousbt"></button>
+      </div>
     </div>
 
     <div class="ui-greeting-text">
-      <h2></h2> <!-- should be filled with localStorage var, dummy for now. -->
+      <h1></h1> <!-- should be filled with localStorage var, dummy for now. -->
     </div>
 
     <div class="covid-data">
-      <div class="txtfmt covid-data-header">
+      <div class="covid-data-header">
         <h3>here's the COVID-19 data for today:</h3>
       </div>
       <div class="txtfmt confirmed-text">
@@ -79,11 +99,13 @@
     <div class="advice-snippets">
       <div class="advice-snippets-header">
         <h4>Here's your little pocket of sunshine for today:</h4>
+        <h1 id="quote1">“</h1>
       </div>
       <div class="advice-text-api">
         <!-- API Advice will populate this container. -->
       </div>
       <div class="advice-button-container">
+        <h1 id="quote2">”</h1>
         <button class="btn btn-advice"><p><em>Feeling lucky? Click here for more.</em></p></button>
       </div>
     </div>
