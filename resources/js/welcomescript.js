@@ -11,16 +11,21 @@ $("#greet-button").click(function(event) {
 
     $(".wallflower-greeting").delay(200).fadeIn(4000).fadeOut(4000);
     $(".welcome-to-wallflower").delay(900).fadeIn(4000).fadeOut(3000);
-
+    
+    // LOCAL STORAGE
+    let userName = document.querySelector("#put-name").value;
+    localStorage.setItem("nameValue", userName);
+    
     // welcome to wallflower fade-in greeting:
     // document.getElementById("greeting").innerHTML = (`Nice to meet you, ${window.location.search.substring(12)}.`); // parses string to just showcase data.
-    document.getElementById("greeting").innerHTML = (`Nice to meet you, Michelle.`); // dummy data for now
+    document.getElementById("greeting").innerHTML = (`Nice to meet you, ${localStorage.getItem("nameValue")}.`); // dummy data for now
     document.getElementById("welcome-in").innerHTML = ("Welcome to <span id=wlf-welcome> wallflower</span>."); // parses string to just showcase data.
 
 
     window.setTimeout(function () {
         window.location.href = "userinterface.html"; }, 8000); 
 });
+
 
 
 

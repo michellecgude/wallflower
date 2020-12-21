@@ -77,7 +77,7 @@ adviceButton.onclick = function (event) {
 }
 
 // FUTURE JQUERY SCRIPT WILL GO HERE.
-document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = ("Hey there, Michelle."); // parses string to just showcase data.
+document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`); // parses string to just showcase data.
 
 
 // creates a button for the divs tracker, appends to document by class.
