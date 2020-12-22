@@ -2,15 +2,9 @@
 
 // JQUERY DUMMY USER LOGIN: 
 
-// $(".put-name").keyup(function() {
-//     if ($.trim(this.value).length > 0) 
-//         $("#greet-button").show();
-//         else 
-//         $("#greet-button").hide();
-// });
-
 $("#greet-button").click(function(event) {
     event.preventDefault();
+
 
     $("#login-prompt").fadeOut("slow");
     $("#login-form").fadeOut("slow");
