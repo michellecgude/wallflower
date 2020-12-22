@@ -17,6 +17,12 @@ body {
 button, input {
     border: none;
     padding: 10px;
+    letter-spacing: 3px;
+}
+
+#greet-button {
+    border: none;
+    padding: 10px;
     font-family: "Castoro";
     letter-spacing: 3px;
     border-radius: 10px;
@@ -79,7 +85,7 @@ button {
         position: relative;
         font-size: 45px;
         animation-name: hihellofadeinout;
-        animation-duration: 7s;
+        animation-duration: 6s;
         animation-timing-function: ease-in-out;
         animation-delay: 2s;
     }
@@ -102,7 +108,7 @@ button {
         animation-name: loginfadein;
         animation-duration: 6s;
         animation-fill-mode: forwards;
-        animation-delay: 10s;
+        animation-delay: 7s;
     }
 
     @keyframes loginfadein {
@@ -131,294 +137,135 @@ button {
 
 
 /* HOW ARE YOU PAGE STYLING? */
-#how-are-you-container { 
-	overflow:hidden;
-	background-color:rgba(255, 255, 255, 1);
-	opacity:1;
-	width:1440px;
-	height:1024px;
-	position:absolute;
+.how-are-you-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr .7fr 0.4fr 0.6fr 2fr 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "navbar-hay navbar-hay navbar-hay navbar-hay navbar-hay navbar-hay"
+    ". . . . . ."
+    ". how-are-you how-are-you how-are-you how-are-you ."
+    ". . . . . ."
+    "mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay"
+    ". . . . . .";
 }
 
-#empowered { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:401px;
-	top:432px;
+.navbar-hay {
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo-hay .";
+  grid-area: navbar-hay;
 }
-#overwhelmed { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:401px;
-	top:634px;
-}
-#comfortable { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:660px;
-	top:432px;
-}
-#stressed { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:660px;
-	top:634px;
-}
-#contant { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:919px;
-	top:432px;
-}
-#worried { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:919px;
-	top:634px;
-}
-#neutral { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:1178px;
-	top:432px;
-}
-#anxious { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:1178px;
-	top:634px;
-}
-#happy { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:142px;
-	top:432px;
-}
-#sad { 
-	border-radius:500px;
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	opacity:1;
-	width:120px;
-	height:120px;
-	position:absolute;
-	left:142px;
-	top:634px;
-}
-#logo { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:128px;
-	height:34px;
-	position:absolute;
-	left:10px;
-	top:7px;
-	font-family:Inknut Antiqua;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
-}
-#how-are-you { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:721px;
-	height:83px;
-	position:absolute;
-	left:359px;
-	top:279px;
-	font-family:Halant;
-	text-align:center;
-	font-size:55px;
-	letter-spacing:0;
-	line-height:undefined;
+
+.logo-hay { 
+  font-family: "Inknut Antiqua";
+  font-size: 10px;
+  padding-left: 20px;
+  grid-area: logo-hay; }
+
+.how-are-you { 
+  font-family: "Halant";
+  font-size: 35px;
+  text-align: center;
+  grid-area: how-are-you; }
+
+.mood-buttons-container-hay {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "happy empowered comfortable contant neutral"
+    "sad overwhelmed stressed worried anxious";
+  grid-area: mood-buttons-container-hay;
+
+  text-align: center;
+  padding: 40px;
+  margin-right: 270px;
+  margin-left: 270px;
 }
 
 
-#happytxt { 
-	color:rgba(0, 0, 0, 1);
+.haybtns {
+  border-radius:500px;
+	background-color:rgba(211, 211, 211, 0.582);
 	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:96px;
-	top:478px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+	width:130px;
+  height:130px;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+  font-family: "Tenor Sans";
 }
 
-#sadtxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:95px;
-	top:685px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.haybtns > p {
+ 
 }
 
-#overwhelmedtxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:354px;
-	top:685px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+/* these below will affect the buttons in the UI */
+.happy { 
+  grid-area: happy; }
+  #happybtny:hover {
+    background-color: rgb(226, 226, 113);
 }
 
-#stressedtxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:215px;
-	height:34px;
-	position:absolute;
-	left:612px;
-	top:685px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.empowered { 
+  grid-area: empowered; }
+  #empoweredbtny:hover {
+    background-color: rgb(226, 186, 113);
 }
 
-#worriedtxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:873px;
-	top:685px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.comfortable { 
+  grid-area: comfortable; }
+  #comfortablebtny:hover {
+    background-color: rgb(149, 202, 105);
 }
 
-#anxioustxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:1131px;
-	top:685px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.contant { 
+  grid-area: contant; }
+  #contantbtny:hover {
+    background-color: rgb(148, 216, 205);
 }
 
-#empoweredtxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:354px;
-	top:481px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.neutral { 
+  grid-area: neutral; }
+  #neutralbtny:hover {
+    background-color: rgb(147, 175, 171);
 }
 
-#comfortabletxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:215px;
-	height:34px;
-	position:absolute;
-	left:612px;
-	top:481px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.sad { 
+  grid-area: sad; }
+  #sadbtny:hover {
+    background-color: rgb(129, 171, 219)
 }
 
-#contenttxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:872px;
-	top:481px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.overwhelmed { 
+  grid-area: overwhelmed; }
+  #overwhelmedbtny:hover {
+    background-color: rgb(211, 150, 160);
 }
 
-#neutraltxt { 
-	color:rgba(0, 0, 0, 1);
-	opacity:1;
-	width:214px;
-	height:34px;
-	position:absolute;
-	left:1131px;
-	top:478px;
-	font-family:Tenor Sans;
-	text-align:center;
-	font-size:18px;
-	letter-spacing:0;
-	line-height:undefined;
+.stressed { 
+  grid-area: stressed; }
+  #stressedbtny:hover {
+    background-color: rgb(129, 129, 93);
 }
+
+.worried { 
+  grid-area: worried; }
+  #worriedbtny:hover {
+    background-color: rgb(220, 236, 71);
+}
+
+.anxious { 
+  grid-area: anxious; }
+  #anxiousbtny:hover {
+    background-color: rgb(226, 113, 113);
+}
+
 
 
 

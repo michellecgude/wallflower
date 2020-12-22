@@ -1,7 +1,13 @@
 // - - - WELCOME TO WALLFLOWER SCRIPT - - - //
 
 // JQUERY DUMMY USER LOGIN: 
-// using query string to grab name greeting...: (will use cookies in the future once I learn how to use them. Just using this as a loophole because I have limited time with the project.)
+
+// $(".put-name").keyup(function() {
+//     if ($.trim(this.value).length > 0) 
+//         $("#greet-button").show();
+//         else 
+//         $("#greet-button").hide();
+// });
 
 $("#greet-button").click(function(event) {
     event.preventDefault();
@@ -9,8 +15,8 @@ $("#greet-button").click(function(event) {
     $("#login-prompt").fadeOut("slow");
     $("#login-form").fadeOut("slow");
 
-    $(".wallflower-greeting").delay(200).fadeIn(4000).fadeOut(4000);
-    $(".welcome-to-wallflower").delay(900).fadeIn(4000).fadeOut(3000);
+    $(".wallflower-greeting").delay(500).fadeIn(4500).fadeOut(2000);
+    $(".welcome-to-wallflower").delay(600).fadeIn(5500).fadeOut(2000);
     
     // LOCAL STORAGE
     let userName = document.querySelector("#put-name").value;
@@ -23,9 +29,6 @@ $("#greet-button").click(function(event) {
 
 
     window.setTimeout(function () {
-        window.location.href = "userinterface.html"; }, 8000); 
+        window.location.href = "how-are-you.html"; }, 8000); 
 });
-
-
-
 
