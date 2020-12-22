@@ -6,23 +6,22 @@ $("#greet-button").click(function(event) {
     event.preventDefault();
 
 
-    $("#login-prompt").fadeOut("slow");
-    $("#login-form").fadeOut("slow");
+    $("#login-prompt").fadeOut(2000);
+    $("#login-form").fadeOut(2000);
 
-    $(".wallflower-greeting").delay(500).fadeIn(4500).fadeOut(5000);
-    $(".welcome-to-wallflower").delay(600).fadeIn(5500).fadeOut(6000);
+    $(".wallflower-greeting").delay(4000).fadeIn(2500).fadeOut(4000);
+    $(".welcome-to-wallflower").delay(8000).fadeIn(2500).fadeOut(6000);
     
     // LOCAL STORAGE
     let userName = document.querySelector("#put-name").value;
     localStorage.setItem("nameValue", userName);
     
     // welcome to wallflower fade-in greeting:
-    // document.getElementById("greeting").innerHTML = (`Nice to meet you, ${window.location.search.substring(12)}.`); // parses string to just showcase data.
-    document.getElementById("greeting").innerHTML = (`Nice to meet you, ${localStorage.getItem("nameValue")}.`); // dummy data for now
-    document.getElementById("welcome-in").innerHTML = ("Welcome to <span id=wlf-welcome> wallflower</span>."); // parses string to just showcase data.
+    document.getElementById("greeting").innerHTML = (`Nice to meet you, <span id="name-welcome">${localStorage.getItem("nameValue")}</span>.`);
+    document.getElementById("welcome-in").innerHTML = ("Welcome to <br><br><br><span id=wlf-welcome> wallflower</span>");
 
 
     window.setTimeout(function () {
-        window.location.href = "how-are-you.html"; }, 8000); 
+        window.location.href = "how-are-you.html"; }, 9000); 
 });
 

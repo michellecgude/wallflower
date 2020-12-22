@@ -152,12 +152,12 @@ margin: 0 auto;
   }
 
 .hello-hook {
-letter-spacing: 3px;
-width: 1000px;
-margin: auto;
-font-family: "Monument Black";
+width: 60%;
+margin: 200px auto;
+font-family: "Monument Regular";
 color: white;
-letter-spacing: 8%; 
+letter-spacing: 9px;
+line-height: 60px; 
 }
 
 .hook-wallflowers {
@@ -183,7 +183,7 @@ opacity: 0;
 position: relative;
 font-size: 35px;
 animation-name: hihellofadeinout;
-animation-duration: 10s;
+animation-duration: 12s;
 animation-timing-function: ease-in-out;
 animation-delay: 4s;
 }
@@ -194,9 +194,20 @@ opacity: 0;
 position: relative;
 font-size: 35px;
 animation-name: hihellofadeinout;
-animation-duration: 10s;
+animation-duration: 12s;
 animation-timing-function: ease-in-out;
 animation-delay: 6s;
+}
+
+.fourth-hook { 
+grid-area: first-hook; 
+opacity: 0;
+position: relative;
+font-size: 35px;
+animation-name: hihellofadeinout;
+animation-duration: 16s;
+animation-timing-function: ease-in-out;
+animation-delay: 8s;
 }
 
 @keyframes hihellofadeinout {
@@ -206,37 +217,6 @@ animation-delay: 6s;
 100% { opacity: 0; }
 }
 
-button, input {
-border: none;
-padding: 10px;
-letter-spacing: 3px;
-}
-
-#greet-button {
-display: none;
-border: none;
-padding: 10px;
-letter-spacing: 3px;
-border-radius: 10px;
-font-size: 25px;
-}
-
-input {
-width: 400px;
-margin: 80px;
-text-align: center;
-outline: none;
-background: transparent;
-}
-
-button {
-margin: 20px;
-left: 500px;
-}
-
-#wlf-welcome {
-/* font-family: "" ; */
-}
 
 /* this then fades in after hello-hook fades out, prompting them to give a name. */
 .login-info { 
@@ -247,14 +227,46 @@ left: 0;
 right: 0;
 margin-left: auto;
 margin-right: auto;
-padding: 300px;
-width: 1000px;
+padding-top: 300px;
+width: 1200px;
 font-size: 18px;
 text-align: center;
 animation-name: loginfadein;
 animation-duration: 6s;
 animation-fill-mode: forwards;
-animation-delay: 16s;
+animation-delay: 20s;
+}
+
+
+#login-prompt {
+font-family: "Monument Regular";
+color: white;
+letter-spacing: 9px;
+line-height: 60px; 
+width: 1200px;
+}
+
+/* made button invisible for more minimal user experience */
+#greet-button {
+display: none;
+}
+
+input {
+border: none;
+width: 1000px;
+margin: 80px;
+text-align: center;
+outline: none;
+background-color: #ebdfa3;
+font-family: "Bikeride";
+font-size: 55px;
+padding: 30px;
+border-radius: 51px 50px 50px 5px;
+letter-spacing: 6px;
+}
+
+#put-name {
+color: white;
 }
 
 @keyframes loginfadein {
@@ -262,26 +274,38 @@ animation-delay: 16s;
 100% { opacity: 1; }
 }
 
-#put-name {
-font-size: 25px;
-}
 
-/* this is the div that says, "nice to meet you" after login input */
+/* "Nice to meet you, _____." */
 .wallflower-greeting {
 display: none;
 position: absolute;
-padding: 200px;
+padding-top: 600px;
+padding-left: 350px;
 margin: 0 auto;
-/* font-family: "Piazzolla"; */
+font-family: "Monument Regular";
+font-size: 70px;
+color: white;
 }
 
+
+/* "Welcome to Wallflower." */
 .welcome-to-wallflower {
 display: none;
 position: absolute;
 padding-top: 250px;
-padding-left: 200px;
+padding-left: 350px;
 margin: 0 auto;
-/* font-family: "Piazzolla"; */
+font-family: "Monument Light";
+font-size: 78px;
+}
+
+/* Wallflower span */
+#wlf-welcome {
+font-family: "Bikeride";
+line-height: 15px;
+font-size: 528px;
+color: #F7F1D5;
+letter-spacing: 3px;
 }
 
 
@@ -322,16 +346,20 @@ grid-area: navbar-hay;
 }
 
 .logo-hay { 
-/* font-family: "Inknut Antiqua"; */
-font-size: 10px;
-padding-left: 20px;
+font-family: "Bikeride";
+color: #F7F1D5;
+font-size: 15px;
+letter-spacing: 3px;
+padding: 30px;
 grid-area: logo-hay; }
 
 .how-are-you { 
-/* font-family: "Halant"; */
+font-family: "Monument";
+letter-spacing: 3px;
 font-size: 35px;
 text-align: center;
-grid-area: how-are-you; }
+grid-area: how-are-you;
+}
 
 .mood-buttons-container-hay {
 display: grid;
