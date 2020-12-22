@@ -24,6 +24,17 @@ font-family: "Sunshine" ;
 
 */
 
+/* 
+  GOOGLE FONT REFERENCE:
+
+font-family: 'Cantarell', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Nunito', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Trispace', sans-serif;
+
+ */
+
 @font-face { 
   font-family: "Basier Square Mono"; 
   src: url("fonts/BasierSquareMono-Regular.otf"); }
@@ -137,19 +148,17 @@ body {
       ".";
       max-width: 100vw;
       max-height: 100vh;
-      /* margin-top: 500px; */
       margin: 0 auto;
     }
 
     .hello-hook {
-        /* font-family: "Tenor Sans"; */
         letter-spacing: 3px;
         padding: 100px;
         padding-top: 210px;
         width: 1000px;
         margin: auto;
     }
-/* 
+
 
   .first-hook { 
       grid-area: first-hook; 
@@ -161,28 +170,9 @@ body {
       animation-timing-function: ease-in-out;
       animation-delay: 2s;
 
-    } */
-
-    /* font tester */
-  .first-hook { 
-    grid-area: first-hook; 
-    position: relative;
-    font-size: 35px;
-  }
-
-  .second-hook { 
-    grid-area: first-hook; 
-    position: relative;
-    font-size: 35px;
-  }
-
-  .third-hook { 
-    grid-area: first-hook; 
-    position: relative;
-    font-size: 35px;
-  }
+    }
     
-    /* .second-hook { 
+    .second-hook { 
             grid-area: first-hook; 
             opacity: 0;
             position: relative;
@@ -209,7 +199,7 @@ body {
         25% { opacity: 1; }
         65% { opacity: 1; }
         100% { opacity: 0; }
-    } */
+    }
 
     button, input {
       border: none;
@@ -221,7 +211,6 @@ body {
     display: none;
       border: none;
       padding: 10px;
-      /* font-family: "Castoro"; */
       letter-spacing: 3px;
       border-radius: 10px;
       font-size: 25px;
@@ -241,11 +230,11 @@ body {
   }
   
   #wlf-welcome {
-      /* font-family: "Inknut Antiqua"; */
+  /* font-family: "" ; */
   }
     
     /* this then fades in after hello-hook fades out, prompting them to give a name. */
-    /* .login-info { 
+    .login-info { 
         grid-area: login-info;
         opacity: 0;
         position: absolute; 
@@ -255,7 +244,6 @@ body {
         margin-right: auto;
         padding: 300px;
         width: 1000px;
-        /* font-family: "Tenor Sans"; */
         font-size: 18px;
         text-align: center;
         animation-name: loginfadein;
@@ -270,9 +258,8 @@ body {
     }
 
     #put-name {
-      /* font-family: "Space Grotesk"; */
       font-size: 25px;
-    } */
+    }
     
     /* this is the div that says, "nice to meet you" after login input */
     .wallflower-greeting {
