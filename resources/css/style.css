@@ -1,3 +1,12 @@
+/* locally downloaded fonts test : */
+
+@font-face { 
+  font-family: ; 
+  src: url(""); }
+
+
+
+
 
 /* UNIVERSAL STYLING BASICS: */
 * {
@@ -10,6 +19,8 @@ body {
     height: 100%;
     max-width: 100vw;
     max-height: 100vh;
+    background-color: #f0faf1;
+    font-family: "";
 }
 
 
@@ -29,7 +40,7 @@ button, input {
   display: none;
     border: none;
     padding: 10px;
-    font-family: "Castoro";
+    /* font-family: "Castoro"; */
     letter-spacing: 3px;
     border-radius: 10px;
     font-size: 25px;
@@ -48,7 +59,7 @@ button {
 }
 
 #wlf-welcome {
-    font-family: "Inknut Antiqua";
+    /* font-family: "Inknut Antiqua"; */
 }
 
 
@@ -69,8 +80,12 @@ button {
     }
 
     .hello-hook {
-        font-family: "Piazzolla";
+        /* font-family: "Tenor Sans"; */
+        letter-spacing: 3px;
         padding: 100px;
+        padding-top: 210px;
+        width: 1000px;
+        margin: auto;
     }
 
 
@@ -78,24 +93,35 @@ button {
       grid-area: first-hook; 
       opacity: 0;
       position: relative;
-      font-size: 45px;
+      font-size: 35px;
       animation-name: hihellofadeinout;
-      animation-duration: 7s;
+      animation-duration: 12s;
       animation-timing-function: ease-in-out;
-      animation-delay: 1s;
+      animation-delay: 2s;
 
     }
+    
+    .second-hook { 
+            grid-area: first-hook; 
+            opacity: 0;
+            position: relative;
+            font-size: 35px;
+            animation-name: hihellofadeinout;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 4s;
+        }
 
-.second-hook { 
-        grid-area: first-hook; 
-        opacity: 0;
-        position: relative;
-        font-size: 45px;
-        animation-name: hihellofadeinout;
-        animation-duration: 6s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 2s;
-    }
+    .third-hook { 
+            grid-area: first-hook; 
+            opacity: 0;
+            position: relative;
+            font-size: 35px;
+            animation-name: hihellofadeinout;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 6s;
+        }
     
     @keyframes hihellofadeinout {
         0% { opacity: 0; }
@@ -109,37 +135,58 @@ button {
         grid-area: login-info;
         opacity: 0;
         position: absolute; 
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
         padding: 300px;
-        font-family: "Piazzolla";
+        width: 1000px;
+        /* font-family: "Tenor Sans"; */
         font-size: 18px;
+        text-align: center;
         animation-name: loginfadein;
         animation-duration: 6s;
         animation-fill-mode: forwards;
-        animation-delay: 7s;
+        animation-delay: 16s;
     }
 
     @keyframes loginfadein {
         0%, 100% { opacity: 0; }
         100% { opacity: 1; }
     }
+
+    #put-name {
+      /* font-family: "Space Grotesk"; */
+      font-size: 25px;
+    }
     
     /* this is the div that says, "nice to meet you" after login input */
     .wallflower-greeting {
-        display: none;
-        position: absolute;
-        padding: 200px;
-        margin: 0 auto;
-        font-family: "Piazzolla";
-    }
-    
-    .welcome-to-wallflower {
-        display: none;
-        position: absolute;
-        padding-top: 250px;
-        padding-left: 200px;
-        margin: 0 auto;
-        font-family: "Piazzolla";
-    }
+      display: none;
+      position: absolute;
+      padding: 200px;
+      margin: 0 auto;
+      /* font-family: "Piazzolla"; */
+  }
+  
+  .welcome-to-wallflower {
+      display: none;
+      position: absolute;
+      padding-top: 250px;
+      padding-left: 200px;
+      margin: 0 auto;
+      /* font-family: "Piazzolla"; */
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -169,13 +216,13 @@ button {
 }
 
 .logo-hay { 
-  font-family: "Inknut Antiqua";
+  /* font-family: "Inknut Antiqua"; */
   font-size: 10px;
   padding-left: 20px;
   grid-area: logo-hay; }
 
 .how-are-you { 
-  font-family: "Halant";
+  /* font-family: "Halant"; */
   font-size: 35px;
   text-align: center;
   grid-area: how-are-you; }
@@ -205,7 +252,7 @@ button {
   height:130px;
   transition: ease-in-out;
   transition-duration: 0.5s;
-  font-family: "Tenor Sans";
+  /* font-family: "Tenor Sans"; */
 }
 
 /* these below will affect the buttons in the UI */
@@ -298,7 +345,7 @@ button {
     grid-template-areas:
       ". .";
     grid-area: logo-space;
-    font-family: "Inknut Antiqua", serif;
+    /* font-family: "Inknut Antiqua", serif; */
     font-size: 10px;
     text-align: center;
     padding: 25px;
@@ -397,7 +444,7 @@ button {
 
 
   .ui-greeting-text { 
-      font-family: "Halant";
+      /* font-family: "Halant"; */
       font-size: 25px;
       font-weight: bolder;
       text-align: center;
@@ -420,12 +467,12 @@ button {
   }
   
   .covid-data-header { 
-      font-family: "Tenor Sans";
+      /* font-family: "Tenor Sans"; */
       grid-area: covid-data-header; }
 
   .txtfmt { 
     padding-left: 80px;
-    font-family: "Halant"; 
+    /* font-family: "Halant";  */
     font-size: 23px;
 }
   
@@ -444,7 +491,7 @@ button {
 
 
     .num-data { 
-        font-family: "Space Mono";
+        /* font-family: "Space Mono"; */
         text-align: center;
         font-size: 20px;
     }
@@ -478,11 +525,11 @@ button {
   }
   
   .advice-snippets-header { 
-      font-family: "Tenor Sans";
+      /* font-family: "Tenor Sans"; */
       grid-area: advice-snippets-header; }
   
   .advice-text-api { 
-      font-family: "Space Mono";
+      /* font-family: "Space Mono"; */
       padding-top: 80px;
       padding-left: 80px;
       width: 500px;
@@ -490,11 +537,11 @@ button {
 
     #quote1 { 
         padding-top: 50px;
-        font-family: "Castoro";
+        /* font-family: "Castoro"; */
     }
 
     #quote2 { 
-        font-family: "Castoro";
+        /* font-family: "Castoro"; */
         padding-left: 500px;
     }
   

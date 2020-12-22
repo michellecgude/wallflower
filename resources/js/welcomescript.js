@@ -9,8 +9,8 @@ $("#greet-button").click(function(event) {
     $("#login-prompt").fadeOut("slow");
     $("#login-form").fadeOut("slow");
 
-    $(".wallflower-greeting").delay(500).fadeIn(4500).fadeOut(2000);
-    $(".welcome-to-wallflower").delay(600).fadeIn(5500).fadeOut(2000);
+    $(".wallflower-greeting").delay(500).fadeIn(4500).fadeOut(5000);
+    $(".welcome-to-wallflower").delay(600).fadeIn(5500).fadeOut(6000);
     
     // LOCAL STORAGE
     let userName = document.querySelector("#put-name").value;
