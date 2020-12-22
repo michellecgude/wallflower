@@ -5,12 +5,11 @@
 $("#greet-button").click(function(event) {
     event.preventDefault();
 
+    $("#login-prompt").fadeOut(3000);
+    $("#login-form").fadeOut(3000);
 
-    $("#login-prompt").fadeOut(2000);
-    $("#login-form").fadeOut(2000);
-
-    $(".wallflower-greeting").delay(4000).fadeIn(2500).fadeOut(4000);
-    $(".welcome-to-wallflower").delay(8000).fadeIn(2500).fadeOut(6000);
+    $(".wallflower-greeting").delay(4000).fadeIn(3000).fadeOut(3000);
+    $(".welcome-to-wallflower").delay(9000).fadeIn(3000).fadeOut(3000);
     
     // LOCAL STORAGE
     let userName = document.querySelector("#put-name").value;
@@ -22,6 +21,6 @@ $("#greet-button").click(function(event) {
 
 
     window.setTimeout(function () {
-        window.location.href = "how-are-you.html"; }, 9000); 
+        window.location.href = "how-are-you.html"; }, 16000); 
 });
 
