@@ -36,13 +36,15 @@ font-family: 'Della Respira', serif;
 
  */
 
+resources\css\fonts\BasierSquareMono-Regular.otf
+
 @font-face { 
   font-family: "Basier Square Mono"; 
-  src: url("fonts/BasierSquareMono-Regular.otf"); }
+  src: url("resources/css/fonts/BasierSquareMono-Regular.otf"); }
 
 @font-face { 
   font-family: "Bikeride"; 
-  src: url("fonts/Bikeride.ttf"); }
+  src: url("resources/css/fonts/Bikeride.ttf"); }
 
 @font-face { 
   font-family: "Bigilla Bold"; 
@@ -99,7 +101,7 @@ font-family: 'Della Respira', serif;
 
 @font-face { 
   font-family: "Monument Regular"; 
-  src: url("fonts/MonumentExtended-Regular.otf"); }
+  src: url("resources/css/fonts/MonumentExtended-Regular.otf"); }
 
 @font-face { 
   font-family: "Cuento"; 
