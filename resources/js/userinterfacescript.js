@@ -147,4 +147,4 @@ adviceButton.onclick = function (event) {
 		}
 
 
-		document.querySelector("body > div >
+		document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`)};
