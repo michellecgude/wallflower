@@ -1,13 +1,13 @@
 /* 
    LOCAL FONT REFERENCE:
 
-font-family: "Basier Square Mono" ;
 font-family: "Bikeride" ;
 font-family: "Monument Black" ;
 font-family: "Monument Light" ;
 font-family: "Monument Regular" ;
 
 */
+
 
 /* 
   GOOGLE FONT REFERENCE:
@@ -21,238 +21,192 @@ font-family: 'Della Respira', serif;
 
  */
 
-@font-face { 
-  font-family: "Basier Square Mono"; 
-  src: url("resources/css/fonts/BasierSquareMono-Regular.otf"); }
+@font-face {
+	font-family: "Bikeride";
+	src: url("resources/css/fonts/Bikeride.ttf");
+}
 
-@font-face { 
-  font-family: "Bikeride"; 
-  src: url("resources/css/fonts/Bikeride.ttf"); }
+@font-face {
+	font-family: "Monument Black";
+	src: url("fonts/MonumentExtended-Black.otf");
+}
 
-@font-face { 
-  font-family: "Bigilla Bold"; 
-  font-weight: bold;
-  src: url("fonts/Bigilla-Bold.otf"); }
+@font-face {
+	font-family: "Monument Light";
+	src: url("fonts/MonumentExtended-Light.otf");
+}
 
-@font-face { 
-  font-family: "Bigilla"; 
-  src: url("fonts/Bigilla.otf"); }
-
-@font-face { 
-  font-family: "Casta Thin"; 
-  src: url("fonts/Casta-Thin.otf"); }
-
-@font-face { 
-  font-family: "Casta Thin Slanted"; 
-  src: url("fonts/Casta-ThinSlanted.otf"); }
-
-@font-face { 
-  font-family: "Casta Thin"; 
-  src: url("fonts/Casta-Thin.otf"); }
-
-@font-face { 
-  font-family: "Chillout"; 
-  src: url("fonts/Chillout.ttf"); }
-
-@font-face { 
-  font-family: "Rigraf Semi Bold"; 
-  src: url("fonts/DXRigraf-SemiBold.otf"); }
-
-@font-face { 
-  font-family: "Rigraf Semi Bold Expanded"; 
-  src: url("fonts/DXRigraf-SemiBoldExpanded.otf"); }
-
-@font-face { 
-  font-family: "Rigraf Semi Bold Italic"; 
-  src: url("fonts/DXRigraf-SemiBoldItalic.otf"); }
-
-@font-face { 
-  font-family: "Mak Regular"; 
-  src: url("fonts/MAK-bold.otf"); }
-
-@font-face { 
-  font-family: "Mak Bold"; 
-  src: url("fonts/MAK.otf"); }
-
-@font-face { 
-  font-family: "Monument Black"; 
-  src: url("fonts/MonumentExtended-Black.otf"); }
-
-@font-face { 
-  font-family: "Monument Light"; 
-  src: url("fonts/MonumentExtended-Light.otf"); }
-
-@font-face { 
-  font-family: "Monument Regular"; 
-  src: url("resources/css/fonts/MonumentExtended-Regular.otf"); }
-
-@font-face { 
-  font-family: "Cuento"; 
-  src: url("fonts/OPTICuento.otf"); }
-
-@font-face { 
-  font-family: "Pulchella"; 
-  src: url("fonts/Pulchella.otf"); }
-
-@font-face { 
-  font-family: "Modernist SK"; 
-  src: url("fonts/Sk-Modernist-Regular.otf"); }
-
-@font-face { 
-  font-family: "Sunshine"; 
-  src: url("fonts/Sunshine.ttf"); }
+@font-face {
+	font-family: "Monument Regular";
+	src: url("resources/css/fonts/MonumentExtended-Regular.otf");
+}
 
 
+/* UNIVERSAL STYLING: */
 
-/* UNIVERSAL STYLING BASICS: */
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    letter-spacing: 2px;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
-    background-color: #D9C975;
+	letter-spacing: 2px;
+	height: 100%;
+	max-width: 100vw;
+	max-height: 100vh;
+	background-color: #D9C975;
 }
 
 a {
-color: inherit;
-text-decoration: none;
-pointer-events: hand;
+	color: inherit;
+	text-decoration: none;
+	pointer-events: hand;
 }
-
 
 
 /* - - - - TEMPORARY CSS PSEUDO TRANSITIONS FOR PRESENTATION  - - - - */
 
 
 /* ABOUT/WELCOME TRANSITIONS */
-      .first-hook { 
-      grid-area: first-hook; 
-      opacity: 0;
-      position: relative;
-      font-size: 35px;
-            animation-name: hihellofadeinout;
-            animation-duration: 7s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-            animation-delay: 2s;
-      }
 
-      .second-hook { 
-      grid-area: first-hook; 
-      opacity: 0;
-      position: relative;
-      font-size: 35px;
-            animation-name: hihellofadeinout;
-            animation-duration: 7s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-            animation-delay: 3s;
-      }
-
-      .third-hook { 
-      grid-area: first-hook; 
-      opacity: 0;
-      position: relative;
-      font-size: 35px;
-            animation-name: hihellofadeinout;
-            animation-duration: 7s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-            animation-delay: 4s;
-      }
-
-      .fourth-hook { 
-      grid-area: first-hook; 
-      opacity: 0;
-      position: relative;
-      font-size: 35px;
-            animation-name: hihellofadeinout;
-            animation-duration: 7s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-            animation-delay: 5s;
-      }
-
-      @keyframes hihellofadeinout {
-            0% { opacity: 0; }
-            25% { opacity: 1; }
-            65% { opacity: 1; }
-            100% { opacity: 1; }
-      }
-
-.hello-hook {
-      animation-name: fadeout4pres;
-      animation-duration: 5s;
-      animation-delay: 9s;
-      animation-fill-mode: forwards;
-  }
-
-      @keyframes fadeout4pres {
-            0% { opacity: 1;}
-            100% { opacity: 0; } 
-      }
-
-/* USER LOGIN TRANSITION + WELCOME TO WALLFLOWER */
-.login-info { 
-grid-area: login-info;
-opacity: 0;
-position: absolute; 
-left: 0;
-right: 0;
-margin-left: auto;
-margin-right: auto;
-padding-top: 300px;
-width: 1200px;
-font-size: 18px;
-text-align: center;
-      animation-name: loginfadein;
-      animation-duration: 3s;
-      animation-fill-mode: forwards;
-      animation-delay: 14s;
+.first-hook {
+	grid-area: first-hook;
+	opacity: 0;
+	position: relative;
+	font-size: 35px;
+	animation-name: hihellofadeinout;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
 }
 
-      @keyframes loginfadein {
-            0%, 100% { opacity: 0; }
-            100% { opacity: 1; }
-      }
+.second-hook {
+	grid-area: first-hook;
+	opacity: 0;
+	position: relative;
+	font-size: 35px;
+	animation-name: hihellofadeinout;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
 
+.third-hook {
+	grid-area: first-hook;
+	opacity: 0;
+	position: relative;
+	font-size: 35px;
+	animation-name: hihellofadeinout;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+.fourth-hook {
+	grid-area: first-hook;
+	opacity: 0;
+	position: relative;
+	font-size: 35px;
+	animation-name: hihellofadeinout;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;
+}
+
+@keyframes hihellofadeinout {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	65% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.hello-hook {
+	animation-name: fadeout4pres;
+	animation-duration: 5s;
+	animation-delay: 9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeout4pres {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+/* USER LOGIN TRANSITION + WELCOME TO WALLFLOWER */
+
+.login-info {
+	grid-area: login-info;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 300px;
+	width: 1200px;
+	font-size: 18px;
+	text-align: center;
+	animation-name: loginfadein;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 12.5s;
+}
+
+@keyframes loginfadein {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 
 /* - - - - - INDEX.HTML - - - - - */
 
 .greeting-container {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 0.6fr 1.6fr 0.8fr 1fr;
-gap: 0px 0px;
-grid-template-areas:
-"."
-"hello-hook"
-"login-info"
-".";
-max-width: 100vw;
-max-height: 100vh;
-margin: 0 auto;
-  }
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.6fr 1.6fr 0.8fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "." "hello-hook" "login-info" ".";
+	max-width: 100vw;
+	max-height: 100vh;
+	margin: 0 auto;
+}
 
 .hello-hook {
-width: 60%;
-margin: 200px auto;
-font-family: "Monument Regular";
-color: white;
-letter-spacing: 9px;
-line-height: 60px; 
+	width: 60%;
+	margin: 200px auto;
+	font-family: "Monument Regular";
+	color: white;
+	letter-spacing: 9px;
+	line-height: 60px;
 }
 
 .hook-wallflowers {
-font-family: "Bikeride";
-font-size: 64px;
+	font-family: "Bikeride";
+	font-size: 64px;
 }
+
 
 /* 
 .first-hook { 
@@ -307,8 +261,6 @@ animation-delay: 8s;
 } */
 
 
-
-
 /* 
 .login-info { 
 grid-area: login-info;
@@ -328,624 +280,648 @@ animation-fill-mode: forwards;
 animation-delay: 23s;
 } */
 
-
 #login-prompt {
-font-family: "Monument Regular";
-color: white;
-letter-spacing: 9px;
-line-height: 60px; 
-width: 1200px;
+	font-family: "Monument Regular";
+	color: white;
+	letter-spacing: 9px;
+	line-height: 60px;
+	width: 1200px;
 }
 
 #greet-button {
-display: none;
+	display: none;
 }
 
 #put-name {
-border: none;
-width: 1000px;
-margin: 80px;
-text-align: center;
-outline: none;
-background-color: #ebdfa3;
-font-family: "Bikeride";
-font-size: 55px;
-padding: 30px;
-border-radius: 60px;
-letter-spacing: 6px;
-color: white;
+	border: none;
+	width: 1000px;
+	margin: 80px;
+	text-align: center;
+	outline: none;
+	background-color: #ebdfa3;
+	font-family: "Bikeride";
+	font-size: 55px;
+	padding: 30px;
+	border-radius: 60px;
+	letter-spacing: 6px;
+	color: white;
 }
 
 @keyframes loginfadein {
-0%, 100% { opacity: 0; }
-100% { opacity: 1; }
+	0%,
+	100% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 
 /* "Nice to meet you, _____." */
+
 .wallflower-greeting {
-display: none;
-position: absolute;
-padding-top: 600px;
-padding-left: 350px;
-margin: 0 auto;
-font-family: "Monument Regular";
-font-size: 70px;
-color: white;
+	display: none;
+	position: absolute;
+	padding-top: 600px;
+	padding-left: 350px;
+	margin: 0 auto;
+	font-family: "Monument Regular";
+	font-size: 70px;
+	color: white;
 }
 
 
 /* "Welcome to Wallflower." */
+
 .welcome-to-wallflower {
-display: none;
-position: absolute;
-padding-top: 250px;
-padding-left: 350px;
-margin: 0 auto;
-font-family: "Monument Light";
-font-size: 78px;
+	display: none;
+	position: absolute;
+	padding-top: 250px;
+	padding-left: 350px;
+	margin: 0 auto;
+	font-family: "Monument Light";
+	font-size: 78px;
 }
+
 
 /* Wallflower span */
+
 #wlf-welcome {
-font-family: "Bikeride";
-line-height: 15px;
-font-size: 528px;
-color: #F7F1D5;
-letter-spacing: 3px;
+	font-family: "Bikeride";
+	line-height: 15px;
+	font-size: 528px;
+	color: #F7F1D5;
+	letter-spacing: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* - - - - - HOW-ARE-YOU.HTML CSS - - - - - */
+
 .how-are-you-container {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 0.3fr .7fr 0.4fr 0.6fr 2fr 0.7fr;
-gap: 0px 0px;
-grid-template-areas:
-"navbar-hay navbar-hay navbar-hay navbar-hay navbar-hay navbar-hay"
-". . . . . ."
-". how-are-you how-are-you how-are-you how-are-you ."
-". . . . . ."
-"mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay"
-". . . . . .";
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.3fr .7fr 0.4fr 0.6fr 2fr 0.7fr;
+	gap: 0px 0px;
+	grid-template-areas: "navbar-hay navbar-hay navbar-hay navbar-hay navbar-hay navbar-hay" ". . . . . ." ". how-are-you how-are-you how-are-you how-are-you ." ". . . . . ." "mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay mood-buttons-container-hay" ". . . . . .";
 }
 
 .navbar-hay {
-display: grid;
-grid-template-columns: 0.3fr 1.7fr;
-grid-template-rows: 1fr;
-gap: 0px 0px;
-grid-template-areas:
-"logo-hay .";
-grid-area: navbar-hay;
+	display: grid;
+	grid-template-columns: 0.3fr 1.7fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "logo-hay .";
+	grid-area: navbar-hay;
 }
 
-.logo-hay { 
-font-family: "Bikeride";
-color: #F7F1D5;
-font-size: 15px;
-letter-spacing: 3px;
-padding: 30px;
-grid-area: logo-hay; }
+.logo-hay {
+	font-family: "Bikeride";
+	color: #F7F1D5;
+	font-size: 15px;
+	letter-spacing: 3px;
+	padding: 30px;
+	grid-area: logo-hay;
+}
 
-.how-are-you { 
-font-family: "Monument";
-letter-spacing: 3px;
-font-size: 35px;
-text-align: center;
-color: #F7F1D5;
-grid-area: how-are-you;
+.how-are-you {
+	font-family: "Monument";
+	letter-spacing: 3px;
+	font-size: 35px;
+	text-align: center;
+	color: #F7F1D5;
+	grid-area: how-are-you;
 }
 
 .mood-buttons-container-hay {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-gap: 100px 0px;
-grid-template-areas:
-    "happy empowered comfortable contant neutral"
-    "sad overwhelmed stressed worried anxious";
-grid-area: mood-buttons-container-hay;
-text-align: center;
-padding: 40px;
-margin-right: 270px;
-margin-left: 270px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 100px 0px;
+	grid-template-areas: "happy empowered comfortable contant neutral" "sad overwhelmed stressed worried anxious";
+	grid-area: mood-buttons-container-hay;
+	text-align: center;
+	padding: 40px;
+	margin-right: 270px;
+	margin-left: 270px;
 }
-
 
 .haybtns {
-border-radius: 500px;
-opacity: 1;
-width: 130px;
-height: 130px;
-transition: ease-in-out;
-transition-duration: 0.5s;
-font-family: "Trispace";
-font-size: 16px;
-border: none;
-outline: none;
-background-color: #F7F1D5;
+	border-radius: 500px;
+	opacity: 1;
+	width: 130px;
+	height: 130px;
+	transition: ease-in-out;
+	transition-duration: 0.5s;
+	font-family: "Trispace";
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background-color: #F7F1D5;
 }
+
 
 /* these below will affect the buttons in the UI */
-.happy { 
-grid-area: happy; }
+
+.happy {
+	grid-area: happy;
+}
+
 #happybtny:hover {
-background-color: rgb(226, 226, 113);
+	background-color: rgb(226, 226, 113);
 }
 
-.empowered { 
-grid-area: empowered; }
+.empowered {
+	grid-area: empowered;
+}
+
 #empoweredbtny:hover {
-background-color: rgb(226, 186, 113);
+	background-color: rgb(226, 186, 113);
 }
 
-.comfortable { 
-grid-area: comfortable; }
+.comfortable {
+	grid-area: comfortable;
+}
+
 #comfortablebtny:hover {
-background-color: rgb(149, 202, 105);
+	background-color: rgb(149, 202, 105);
 }
 
-.contant { 
-grid-area: contant; }
+.contant {
+	grid-area: contant;
+}
+
 #contantbtny:hover {
-background-color: rgb(148, 216, 205);
+	background-color: rgb(148, 216, 205);
 }
 
-.neutral { 
-grid-area: neutral; }
+.neutral {
+	grid-area: neutral;
+}
+
 #neutralbtny:hover {
-background-color: rgb(147, 175, 171);
+	background-color: rgb(147, 175, 171);
 }
 
-.sad { 
-grid-area: sad; }
+.sad {
+	grid-area: sad;
+}
+
 #sadbtny:hover {
-background-color: rgb(129, 171, 219)
+	background-color: rgb(129, 171, 219)
 }
 
-.overwhelmed { 
-grid-area: overwhelmed; }
+.overwhelmed {
+	grid-area: overwhelmed;
+}
+
 #overwhelmedbtny:hover {
-background-color: rgb(211, 150, 160);
+	background-color: rgb(211, 150, 160);
 }
 
-.stressed { 
-grid-area: stressed; }
+.stressed {
+	grid-area: stressed;
+}
+
 #stressedbtny:hover {
-background-color: rgb(129, 129, 93);
+	background-color: rgb(129, 129, 93);
 }
 
-.worried { 
-grid-area: worried; }
+.worried {
+	grid-area: worried;
+}
+
 #worriedbtny:hover {
-background-color: rgb(220, 236, 71);
+	background-color: rgb(220, 236, 71);
 }
 
-.anxious { 
-grid-area: anxious; }
+.anxious {
+	grid-area: anxious;
+}
+
 #anxiousbtny:hover {
-background-color: rgb(226, 113, 113);
+	background-color: rgb(226, 113, 113);
 }
-
-
-
-
 
 
 /* - - - - - USERINTERFACE.HTML CSS - - - - - */
+
 .main-ui-content {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 0.3fr 0.4fr 0.3fr 2.7fr 1fr;
-gap: 0px 0px;
-grid-template-areas:
-"logo-space . mood-tracker-ui mood-tracker-ui"
-". . . ."
-". ui-greeting-text ui-greeting-text ."
-"covid-data covid-data advice-snippets advice-snippets"
-"jobs-api-data jobs-api-data jobs-api-data jobs-api-data";
-max-width: 100vw;
-max-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.3fr 0.4fr 0.3fr 2.7fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "logo-space . mood-tracker-ui mood-tracker-ui" ". . . ." ". ui-greeting-text ui-greeting-text ." "covid-data covid-data advice-snippets advice-snippets" "jobs-api-data jobs-api-data jobs-api-data jobs-api-data";
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 .logo-space {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr;
-gap: 0px 0px;
-grid-template-areas:
-". .";
-grid-area: logo-space;
-font-family: "Bikeride";
-color: #F7F1D5;
-font-size: 15px;
-letter-spacing: 3px;
-padding: 3%;
-text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: ". .";
+	grid-area: logo-space;
+	font-family: "Bikeride";
+	color: #F7F1D5;
+	font-size: 15px;
+	letter-spacing: 3px;
+	padding: 3%;
+	text-align: center;
 }
 
 .mood-tracker-ui {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-gap: 0px 0px;
-grid-template-areas:
-"happy empowered comfortable contant neutral sad overwhelmed stressed worried anxious";
-padding: 3%;
-grid-area: mood-tracker-ui;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "happy empowered comfortable contant neutral sad overwhelmed stressed worried anxious";
+	padding: 3%;
+	grid-area: mood-tracker-ui;
 }
 
-.button-ui { 
-width: 30px;
-height: 30px;
-border-radius: 50%;
-transition: ease-in-out;
-transition-duration: 0.5s;
-border: none;
-outline: none;
-background-color: #F7F1D5;
+.button-ui {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transition: ease-in-out;
+	transition-duration: 0.5s;
+	border: none;
+	outline: none;
+	background-color: #F7F1D5;
 }
 
 
 /* want these buttons to have an interactive ui that responds to saved data */
+
+
 /* for now, i'll just use dummy ui/hover to illustrate idea. */
-.happy { 
-grid-area: happy; }
-#happybt:hover {
-background-color: rgb(226, 226, 113);
+
+.happy {
+	grid-area: happy;
 }
 
-.empowered { 
-grid-area: empowered; }
+#happybt:hover {
+	background-color: rgb(226, 226, 113);
+}
+
+.empowered {
+	grid-area: empowered;
+}
 
 #empoweredbt:hover {
-background-color: rgb(226, 186, 113);
+	background-color: rgb(226, 186, 113);
 }
 
-.comfortable { 
-grid-area: comfortable; }
+.comfortable {
+	grid-area: comfortable;
+}
+
 #comfortablebt:hover {
-background-color: rgb(149, 202, 105);
+	background-color: rgb(149, 202, 105);
 }
 
-.contant { 
-grid-area: contant; }
+.contant {
+	grid-area: contant;
+}
+
 #contantbt:hover {
-background-color: rgb(148, 216, 205);
+	background-color: rgb(148, 216, 205);
 }
 
+.neutral {
+	grid-area: neutral;
+}
 
-.neutral { 
-grid-area: neutral; }
 #neutralbt:hover {
-background-color: rgb(147, 175, 171);
+	background-color: rgb(147, 175, 171);
 }
 
+.sad {
+	grid-area: sad;
+}
 
-.sad { 
-grid-area: sad; }
 #sadbt:hover {
-background-color: rgb(129, 171, 219)
+	background-color: rgb(129, 171, 219)
 }
 
+.overwhelmed {
+	grid-area: overwhelmed;
+}
 
-.overwhelmed { 
-grid-area: overwhelmed; }
 #overwhelmedbt:hover {
-background-color: rgb(211, 150, 160);
+	background-color: rgb(211, 150, 160);
 }
 
+.stressed {
+	grid-area: stressed;
+}
 
-.stressed { 
-grid-area: stressed; }
 #stressedbt:hover {
-background-color: rgb(129, 129, 93);
+	background-color: rgb(129, 129, 93);
 }
 
+.worried {
+	grid-area: worried;
+}
 
-.worried { 
-grid-area: worried; }
 #worriedbt:hover {
-background-color: rgb(220, 236, 71);
+	background-color: rgb(220, 236, 71);
 }
 
+.anxious {
+	grid-area: anxious;
+}
 
-.anxious { 
-grid-area: anxious; }
 #anxiousbt:hover {
-background-color: rgb(226, 113, 113);
+	background-color: rgb(226, 113, 113);
 }
 
-
-
-
-.ui-greeting-text { 
-font-family: "Monument Regular";
-    font-size: 20px;
-    font-weight: bolder;
-    margin: auto;
-    width: 100%;
-    text-align: center;
-margin-top: 50px;
-    grid-area: ui-greeting-text;}
+.ui-greeting-text {
+	font-family: "Monument Regular";
+	font-size: 20px;
+	font-weight: bolder;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	grid-area: ui-greeting-text;
+}
 
 .covid-data {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 0.5fr 1fr 1.2fr 1.1fr 1.2fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "covid-data-header covid-data-header"
-        "confirmed-text confirm-num"
-        "death-text death-num"
-        "recovered-text recov-num"
-        "totalrecovered-text totalrecov-num";
-    grid-area: covid-data;
-    margin-top: 10%;
-    margin-right: 70px;
-    margin-left: 200px;
-    height: fit-content;
-    width: fit-content;
+	display: grid;
+	grid-template-columns: 1.5fr 0.5fr;
+	grid-template-rows: 0.5fr 1fr 1.2fr 1.1fr 1.2fr;
+	gap: 0px 0px;
+	grid-template-areas: "covid-data-header covid-data-header" "confirmed-text confirm-num" "death-text death-num" "recovered-text recov-num" "totalrecovered-text totalrecov-num";
+	grid-area: covid-data;
+	margin-top: 10%;
+	margin-right: 70px;
+	margin-left: 200px;
+	height: fit-content;
+	width: fit-content;
 }
 
-.covid-data-header { 
-  font-family: "Monument Regular";
-  letter-spacing: 5px;
-  color: #F7F1D5;
-  grid-area: covid-data-header; }
-
-.txtfmt { 
-font-family: "Monument Regular";
-font-size: 12px;
-text-align: right;
-padding-right: 20px;
+.covid-data-header {
+	font-family: "Monument Regular";
+	letter-spacing: 5px;
+	color: #F7F1D5;
+	grid-area: covid-data-header;
 }
 
-.confirmed-text { 
-grid-area: confirmed-text; }
-
-.death-text { 
-grid-area: death-text; }
-
-.recovered-text { 
-grid-area: recovered-text; }
-
-.totalrecovered-text { 
-grid-area: totalrecovered-text; }
-
-
-
-.num-data { 
-font-family: "Space Mono";
-letter-spacing: 3px;
-text-align: left;
-font-size: 13px;
+.txtfmt {
+	font-family: "Monument Regular";
+	font-size: 12px;
+	text-align: right;
+	padding-right: 20px;
 }
 
-.confirm-num { 
-grid-area: confirm-num; }
+.confirmed-text {
+	grid-area: confirmed-text;
+}
 
-.death-num { 
-grid-area: death-num; }
+.death-text {
+	grid-area: death-text;
+}
 
-.recov-num { 
-grid-area: recov-num; }
+.recovered-text {
+	grid-area: recovered-text;
+}
 
-.totalrecov-num { 
-grid-area: totalrecov-num; }
+.totalrecovered-text {
+	grid-area: totalrecovered-text;
+}
 
+.num-data {
+	font-family: "Space Mono";
+	letter-spacing: 3px;
+	text-align: left;
+	font-size: 13px;
+}
 
+.confirm-num {
+	grid-area: confirm-num;
+}
 
+.death-num {
+	grid-area: death-num;
+}
 
+.recov-num {
+	grid-area: recov-num;
+}
 
-
+.totalrecov-num {
+	grid-area: totalrecov-num;
+}
 
 .advice-snippets {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 0.3fr 1fr 0.4fr;
-gap: 0px 0px;
-grid-template-areas:
-    "advice-snippets-header"
-    "advice-text-api"
-    "advice-button-container";
-grid-area: advice-snippets;
-    margin-top: 10%;
-    margin-left: 70px;
-    margin-right: 200px;
-    height: fit-content;
-    width: fit-content;
-
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.3fr 1fr 0.4fr;
+	gap: 0px 0px;
+	grid-template-areas: "advice-snippets-header" "advice-text-api" "advice-button-container";
+	grid-area: advice-snippets;
+	margin-top: 10%;
+	margin-left: 70px;
+	margin-right: 200px;
+	height: fit-content;
+	width: fit-content;
 }
 
-.advice-snippets-header { 
-font-family: "Monument Regular";
-letter-spacing: 5px;
-color: #F7F1D5;
-grid-area: advice-snippets-header; }
+.advice-snippets-header {
+	font-family: "Monument Regular";
+	letter-spacing: 5px;
+	color: #F7F1D5;
+	grid-area: advice-snippets-header;
+}
 
-.advice-text-api { 
-font-family: "Monument Regular";
-padding-left: 10%;
-font-size: 15px;
-line-height: 50px;
-grid-area: advice-text-api; }
+.advice-text-api {
+	font-family: "Monument Regular";
+	padding-left: 10%;
+	font-size: 15px;
+	line-height: 50px;
+	grid-area: advice-text-api;
+}
 
 .advice-button-container {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-gap: 0px 0px;
-grid-template-areas:
-".";
-grid-area: advice-button-container;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: ".";
+	grid-area: advice-button-container;
 }
 
 .btn-advice {
-width: 300px;
-border: none;
-text-align: center;
-outline: none;
-background-color: #ebdfa3;
-font-family: "Bikeride";
-font-size: 15px;
-padding: 15px;
-border-radius: 50px;
-letter-spacing: 6px;
-margin: 20px;
+	width: 300px;
+	border: none;
+	text-align: center;
+	outline: none;
+	background-color: #ebdfa3;
+	font-family: "Bikeride";
+	font-size: 15px;
+	padding: 15px;
+	border-radius: 50px;
+	letter-spacing: 6px;
+	margin: 20px;
 }
-
-
-
-
 
 .jobs-api-data {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "jobs-search-container jobs-results-container";
-  grid-area: jobs-api-data;
-  margin: 0 200px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-    height: fit-content;
-    width: fit-content;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "jobs-search-container jobs-results-container";
+	grid-area: jobs-api-data;
+	margin: 0 200px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	height: fit-content;
+	width: fit-content;
 }
+
 .jobs-search-container {
-     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "job-search-header job-search-header job-search-header"
-        "job-searchbar job-searchbar job-searchbar"
-        "job-searchbutton job-disclaimer job-disclaimer";
-    width: fit-content;
-    height: fit-content;
-    grid-area: jobs-search-container;
-    margin-right: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "job-search-header job-search-header job-search-header" "job-searchbar job-searchbar job-searchbar" "job-searchbutton job-disclaimer job-disclaimer";
+	width: fit-content;
+	height: fit-content;
+	grid-area: jobs-search-container;
+	margin-right: 70px;
 }
-.job-search-header { grid-area: job-search-header; }
-.job-searchbar { grid-area: job-searchbar; }
-.job-searchbutton { grid-area: job-searchbutton; }
-.job-disclaimer { grid-area: job-disclaimer; }
+
+.job-search-header {
+	grid-area: job-search-header;
+}
+
+.job-searchbar {
+	grid-area: job-searchbar;
+}
+
+.job-searchbutton {
+	grid-area: job-searchbutton;
+}
+
+.job-disclaimer {
+	grid-area: job-disclaimer;
+}
 
 .jobs-results-container {
-    display: grid;
-    grid-template-columns: .1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "job-title jobapi-title"
-        "job-location jobapi-location"
-        "job-salary jobapi-salary"
-        "job-description jobapi-description";
-    margin-left: 70px;
-    grid-area: jobs-results-container;
+	display: grid;
+	grid-template-columns: .1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "job-title jobapi-title" "job-location jobapi-location" "job-salary jobapi-salary" "job-description jobapi-description";
+	margin-left: 70px;
+	grid-area: jobs-results-container;
 }
-.job-results-header { 
 
-grid-area: job-results-header; }
+.job-results-header {
+	grid-area: job-results-header;
+}
 
-.job-title { 
-grid-area: job-title; }
+.job-title {
+	grid-area: job-title;
+}
 
-.job-location { 
-grid-area: job-location; }
+.job-location {
+	grid-area: job-location;
+}
 
-.job-salary { 
-grid-area: job-salary; }
+.job-salary {
+	grid-area: job-salary;
+}
 
-.job-description { 
-grid-area: job-description; }
+.job-description {
+	grid-area: job-description;
+}
 
-.jobapi-title { 
-grid-area: jobapi-title; }
+.jobapi-title {
+	grid-area: jobapi-title;
+}
 
-.jobapi-location { 
-grid-area: jobapi-location; }
+.jobapi-location {
+	grid-area: jobapi-location;
+}
 
-.jobapi-salary { 
-grid-area: jobapi-salary; }
+.jobapi-salary {
+	grid-area: jobapi-salary;
+}
 
-.jobapi-description { 
-grid-area: jobapi-description; }
+.jobapi-description {
+	grid-area: jobapi-description;
+}
+
 
 /* make more dynamic! just for testing...: */
+
 #jobSearchInput {
-font-size: 16px;
-width: 675px;
-border: none;
-text-align: left;
-outline: none;
-background-color: #ebdfa3;
-font-family: "Bikeride";
-font-size: 24px;
-padding: 13px;
-margin-top: 26px;
-border-radius: 50px;
-letter-spacing: 6px;}
+	font-size: 16px;
+	width: 675px;
+	border: none;
+	text-align: left;
+	outline: none;
+	background-color: #ebdfa3;
+	font-family: "Bikeride";
+	font-size: 24px;
+	padding: 13px;
+	margin-top: 26px;
+	border-radius: 50px;
+	letter-spacing: 6px;
+}
 
 #searchButton {
-font-size: 13px;
-width: auto;
-border: none;
-text-align: center;
-outline: none;
-background-color: #ebdfa3;
-font-family: "Bikeride";
-font-size: 24px;
-padding: 20px;
-margin-right: 25px;
-margin-top: 20px;
-margin-bottom: 20px;
-border-radius: 50px;
-letter-spacing: 6px;}
-
+	font-size: 13px;
+	width: auto;
+	border: none;
+	text-align: center;
+	outline: none;
+	background-color: #ebdfa3;
+	font-family: "Bikeride";
+	font-size: 24px;
+	padding: 20px;
+	margin-right: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 50px;
+	letter-spacing: 6px;
+}
 
 #searchButton:hover {
-transition: ease-in-out;
-transition-duration: 1s;
-color:#79a5ad}
+	transition: ease-in-out;
+	transition-duration: 1s;
+	color: #79a5ad
+}
 
 .ui-headers {
-font-size: 15px;
-font-family: "Monument Regular";
-height: 40px;
-color:  #F7F1D5;
-letter-spacing: 6px;}
+	font-size: 15px;
+	font-family: "Monument Regular";
+	height: 40px;
+	color: #F7F1D5;
+	letter-spacing: 6px;
+}
 
 .fancyjobref {
-font-family: "Bikeride";
-font-size: 18px;
-font-style: bolder;
-text-align: right;
-padding-right: 20px;
+	font-family: "Bikeride";
+	font-size: 18px;
+	font-style: bolder;
+	text-align: right;
+	padding-right: 20px;
 }
 
 .apijobtxt {
-font-family: "Space Mono";
-font-size: 13px;
-padding-bottom: 25px;}
+	font-family: "Space Mono";
+	font-size: 13px;
+	padding-bottom: 25px;
+}
 
-.job-disclaimer > p {
-font-style: italic;
-font-size: 10px;
-margin-left: 40px;
-font-family: "Space Mono";
+.job-disclaimer>p {
+	font-style: italic;
+	font-size: 10px;
+	margin-left: 40px;
+	font-family: "Space Mono";
 }
