@@ -679,6 +679,7 @@ font-family: "Monument Regular";
     margin: auto;
     width: 100%;
     text-align: center;
+margin-top: 50px;
     grid-area: ui-greeting-text;}
 
 .covid-data {
@@ -694,7 +695,7 @@ font-family: "Monument Regular";
         "totalrecovered-text totalrecov-num";
     grid-area: covid-data;
     margin-top: 10%;
-    margin-right: 20px;
+    margin-right: 70px;
     margin-left: 200px;
     height: fit-content;
     width: fit-content;
@@ -708,7 +709,7 @@ font-family: "Monument Regular";
 
 .txtfmt { 
 font-family: "Monument Regular";
-font-size: 13px;
+font-size: 12px;
 text-align: right;
 padding-right: 20px;
 }
@@ -728,10 +729,10 @@ grid-area: totalrecovered-text; }
 
 
 .num-data { 
-font-family: "Monument Regular";
+font-family: "Space Mono";
 letter-spacing: 3px;
 text-align: left;
-font-size: 16px;
+font-size: 13px;
 }
 
 .confirm-num { 
@@ -763,7 +764,7 @@ grid-template-areas:
     "advice-button-container";
 grid-area: advice-snippets;
     margin-top: 10%;
-    margin-left: 20px;
+    margin-left: 70px;
     margin-right: 200px;
     height: fit-content;
     width: fit-content;
@@ -794,17 +795,17 @@ grid-area: advice-button-container;
 }
 
 .btn-advice {
-font-size: 13px;
-width: 615px;
+width: 300px;
 border: none;
 text-align: center;
 outline: none;
 background-color: #ebdfa3;
 font-family: "Bikeride";
-font-size: 24px;
+font-size: 15px;
 padding: 15px;
 border-radius: 50px;
 letter-spacing: 6px;
+margin: 20px;
 }
 
 
@@ -819,9 +820,9 @@ letter-spacing: 6px;
   grid-template-areas:
     "jobs-search-container jobs-results-container";
   grid-area: jobs-api-data;
-    margin-top: 10%;
-    margin-right: 20px;
-    margin-left: 200px;
+  margin: 0 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
     height: fit-content;
     width: fit-content;
 }
@@ -837,6 +838,7 @@ letter-spacing: 6px;
     width: fit-content;
     height: fit-content;
     grid-area: jobs-search-container;
+    margin-right: 70px;
 }
 .job-search-header { grid-area: job-search-header; }
 .job-searchbar { grid-area: job-searchbar; }
@@ -845,7 +847,7 @@ letter-spacing: 6px;
 
 .jobs-results-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -854,8 +856,7 @@ letter-spacing: 6px;
         "job-location jobapi-location"
         "job-salary jobapi-salary"
         "job-description jobapi-description";
-    margin-left: 20px;
-    margin-right: 200px;
+    margin-left: 70px;
     grid-area: jobs-results-container;
 }
 .job-results-header { 
@@ -897,12 +898,13 @@ background-color: #ebdfa3;
 font-family: "Bikeride";
 font-size: 24px;
 padding: 13px;
+margin-top: 26px;
 border-radius: 50px;
 letter-spacing: 6px;}
 
 #searchButton {
 font-size: 13px;
-width: 300px;
+width: auto;
 border: none;
 text-align: center;
 outline: none;
@@ -910,6 +912,9 @@ background-color: #ebdfa3;
 font-family: "Bikeride";
 font-size: 24px;
 padding: 20px;
+margin-right: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
 border-radius: 50px;
 letter-spacing: 6px;}
 
@@ -931,8 +936,12 @@ font-size: 15px;
 
 #apijobtxt {
 font-family: "Space Mono";
-font-size: 13px;}
+font-size: 13px;
+padding-bottom: 25px;}
 
 .job-disclaimer > p {
+font-style: italic;
+font-size: 10px;
+margin-left: 40px;
 font-family: "Space Mono";
 }
