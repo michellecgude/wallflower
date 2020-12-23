@@ -851,7 +851,6 @@ margin: 20px;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "job-results-header job-results-header"
         "job-title jobapi-title"
         "job-location jobapi-location"
         "job-salary jobapi-salary"
@@ -920,7 +919,9 @@ letter-spacing: 6px;}
 
 
 #searchButton:hover {
-background-color:#e0a0a0}
+transition: ease-in-out;
+transition-duration: 1s;
+color:#79a5ad}
 
 .ui-headers {
 font-size: 15px;
@@ -929,12 +930,15 @@ height: 40px;
 color:  #F7F1D5;
 letter-spacing: 6px;}
 
-#fancyjobref {
+.fancyjobref {
 font-family: "Bikeride";
-font-size: 15px;
+font-size: 18px;
+font-style: bolder;
+text-align: right;
+padding-right: 20px;
 }
 
-#apijobtxt {
+.apijobtxt {
 font-family: "Space Mono";
 font-size: 13px;
 padding-bottom: 25px;}

@@ -49,18 +49,23 @@ fetch(covidURL, {headers: {"x-access-token": "5cf9dfd5-3449-485e-b5ae-70a60e9978
 // // RANDOM ADVICE API URL:
 const adviceURL = "https://api.adviceslip.com/advice"
 
-// // Advice API Variables:
-const adviceText = document.querySelector(".advice-text-api");
-const adviceButton = document.querySelector(".btn-advice");
-
-
-// // Fetch API Data:
-// // generic quote fetch
 fetch(adviceURL)
 .then(response => response.json())
 .then(response => {adviceText.innerHTML = response.slip.advice})
 .catch(err => console.log(`I'm sorry, there's no advice for today ${err}`))
 
+// // Advice API Variables:
+const adviceText = document.querySelector(".advice-text-api");
+const adviceButton = document.querySelector(".btn-advice");
+// JS Interactivity:
+// Button to toggle/randomized advice:
+adviceButton.onclick = function (event) {
+    event.preventDefault();
+    
+    fetch(adviceURL)
+    .then(response => response.json())
+    .then(response => {adviceText.innerHTML = response.slip.advice})
+    .catch(err => console.log(`I'm sorry, there's no advice for today ${err}`))}
 
 
 
@@ -74,6 +79,7 @@ let jobButton = document.querySelector("#searchButton");
 jobButton.onclick = function getJobSearchData(evnt) {
 
     evnt.preventDefault();
+
 
     let userJobSearch = document.querySelector("#jobSearchInput").value;
 
@@ -93,6 +99,12 @@ jobButton.onclick = function getJobSearchData(evnt) {
         .then(response => response.json())
         .then(response => {
             // grab job data html containers for input:
+            const applyPrompt = document.querySelector("#applyHere")
+            $("#applyHere").hide().fadeIn(1500);
+            // insert results to HTML:
+            applyPrompt.innerHTML = ` * Like what you're seeing? Apply <a href=${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.PositionURI}>here</a>.<br> 
+        If not, spread your wings elsewhere and click the button again for another suggestion on us.`
+
 
             const jobTitle = document.querySelector("body > div > div.jobs-api-data > div.jobs-results-container > div.jobapi-title")
             // insert results to HTML:
@@ -111,6 +123,7 @@ jobButton.onclick = function getJobSearchData(evnt) {
             // insert results to HTML:
             jobDescription.innerHTML = `${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.UserArea.Details.MajorDuties}`;
 
+            $("#apijobtext").hide().fadeIn(2000);
         })
 
         .catch(error => console.log('error', error));
@@ -120,13 +133,4 @@ jobButton.onclick = function getJobSearchData(evnt) {
 
 
 
-
-
-
-
-
-
-
-// FUTURE JQUERY SCRIPT WILL GO HERE.
-document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`); // parses string to just showcase data.
-
+document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`) 

@@ -1,77 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-	<title>Welcome to Wallflower.</title>
-	<html lang="en">
-	
-	<!-- META DATA -->
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@300;400;500&family=Nunito:ital,wght@0,400;0,600;1,400&family=PT+Sans+Caption:wght@400;700&family=Trispace:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
-
-
-    <!-- CSS STYLE -->
-    <link href="style.css" rel="stylesheet">
-
-    
-    <!-- JQUERY -->
-    <script src="resources/data/node_modules/jquery/dist/jquery.min.js"></script>
-    
-
-</head>
-<body>
-    
-<div class="greeting-container">
-<div class="hello-hook">
-    <h1 class="first-hook">
-        With a society characterized by one feisty virus, isolating zoom rooms, and unused vacation days, we've become <span class="hook-wallflowers">wallflowers</span> by chance, not by choice.
-    </h1>
-        <br><br>
-    <h1 class="second-hook">
-        So, instead of asking, "Why me?"
-    </h1>
-        <br><br>
-    <h1 class="third-hook">
-        Ask, "What would a <span class="hook-wallflowers">wallflower</span> do?"
-    </h1>
-        <br><br>
-    <h1 class="fourth-hook">
-        Because the secret of being a <span class="hook-wallflowers">wallflower</span> isn't in their isolation, but in their being comfortable with it.
-    </h1>
-</div>
-
-<div class="login-info">
-    <h2 id="login-prompt">
-        Let's get you comfortable.
-        <br>
-        What name do you go by?
-    </h2>
-
-    <form id="login-form" name="login-name" method="GET"> 
-        <input id="put-name" name="enter-name" type="text" placeholder="Join the club, social butterfly.">
-        <button id="greet-button" type="submit" placeholder=""></button>
-    </form>
-</div>
-
-<div class="wallflower-greeting">
-   <h1 id="greeting"></h1>
-</div>
-
-<div class="welcome-to-wallflower">
-   <h1 id="welcome-in"></h1>
-</div>
-
-
-
-  <!-- JAVASCRIPT -->
-  <script src="resources\js\welcomescript.js"></script>
-
-
-
-</body>
+<html lang="en">
+   <head>
+      <title>Welcome to Wallflower.</title>
+      <!-- META DATA -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@300;400;500&family=Nunito:ital,wght@0,400;0,600;1,400&family=PT+Sans+Caption:wght@400;700&family=Trispace:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+      <!-- CSS STYLE -->
+      <link href="style.css" rel="stylesheet">
+      <!-- JQUERY -->
+      <script src="resources/data/node_modules/jquery/dist/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="greeting-container">
+         <div class="hello-hook">
+            <h1 class="first-hook">
+               With a society characterized by one feisty virus, isolating zoom rooms, and unused vacation days, we've become <span class="hook-wallflowers">wallflowers</span> by chance, not by choice.
+            </h1>
+            <br><br>
+            <h1 class="second-hook">
+               So, instead of asking, "Why me?"
+            </h1>
+            <br><br>
+            <h1 class="third-hook">
+               Ask, "What would a <span class="hook-wallflowers">wallflower</span> do?"
+            </h1>
+            <br><br>
+            <h1 class="fourth-hook">
+               Because the secret of being a <span class="hook-wallflowers">wallflower</span> isn't in their isolation, but in their being comfortable with it.
+            </h1>
+         </div>
+         <div class="login-info">
+            <h2 id="login-prompt">
+               Let's get you comfortable.
+               <br>
+               What name do you go by?
+            </h2>
+            <form id="login-form" name="login-name" method="GET"> 
+               <input id="put-name" name="enter-name" type="text" placeholder="Join the club, social butterfly.">
+               <button id="greet-button" type="submit"></button>
+            </form>
+         </div>
+         <div class="wallflower-greeting">
+            <h1 id="greeting"></h1>
+         </div>
+         <div class="welcome-to-wallflower">
+            <h1 id="welcome-in"></h1>
+         </div>
+      </div>
+      <!-- JAVASCRIPT -->
+      <script src="resources/js/welcomescript.js"></script>
+   </body>
 </html>

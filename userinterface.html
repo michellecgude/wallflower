@@ -1,159 +1,132 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-	<title>Wallflower Home | Interface</title>
-	<html lang="en">
-  
-  
-	<!-- META DATA -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-  
-  
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Piazzolla:wght@400;500;600&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
-
-
-   <!-- CSS STYLE -->
-   <link href="style.css" rel="stylesheet">
-
-    
-   <!-- JQUERY -->
-   <script src="resources/data/node_modules/jquery/dist/jquery.min.js"></script>
-
-
-</head>
-<body>
-
-  <div class="main-ui-content">
-    <div class="logo-space">
-      <a href="index.html"><h1>wallflower</h1></a>
-    </div>
-
-    <div class="mood-tracker-ui">
-      <div class="happy trck">
-        <button class="button-ui" id="happybt"></button>
+<html lang="en">
+   <head>
+      <title>Wallflower Home | Interface</title>
+      <!-- META DATA -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Piazzolla:wght@400;500;600&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+      <!-- CSS STYLE -->
+      <link href="style.css" rel="stylesheet">
+      <!-- JQUERY -->
+      <script src="resources/data/node_modules/jquery/dist/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="main-ui-content">
+      <div class="logo-space">
+         <a href="index.html">
+            <h1>wallflower</h1>
+         </a>
       </div>
-      <div class="empowered trck">
-        <button class="button-ui" id="empoweredbt"></button>
+      <div class="mood-tracker-ui">
+         <div class="happy trck">
+            <button class="button-ui" id="happybt"></button>
+         </div>
+         <div class="empowered trck">
+            <button class="button-ui" id="empoweredbt"></button>
+         </div>
+         <div class="comfortable trck">
+            <button class="button-ui" id="comfortablebt"></button>
+         </div>
+         <div class="contant trck">
+            <button class="button-ui" id="contantbt"></button>
+         </div>
+         <div class="neutral trck">
+            <button class="button-ui" id="neutralbt"></button>
+         </div>
+         <div class="sad trck">
+            <button class="button-ui" id="sadbt"></button>
+         </div>
+         <div class="overwhelmed trck">
+            <button class="button-ui" id="overwhelmedbt"></button>
+         </div>
+         <div class="stressed trck">
+            <button class="button-ui" id="stressedbt"></button>
+         </div>
+         <div class="worried trck">
+            <button class="button-ui" id="worriedbt"></button>
+         </div>
+         <div class="anxious trck">
+            <button class="button-ui" id="anxiousbt"></button>
+         </div>
       </div>
-      <div class="comfortable trck">
-        <button class="button-ui" id="comfortablebt"></button>
+      <div class="ui-greeting-text">
+         <h1></h1>
+         <!-- should be filled with localStorage var, dummy for now. -->
       </div>
-      <div class="contant trck">
-        <button class="button-ui" id="contantbt"></button>
+      <div class="covid-data">
+         <div class="covid-data-header">
+            <h3 class="ui-headers">Here's the COVID-19 data for today:</h3>
+         </div>
+         <div class="txtfmt confirmed-text">
+            <h4>New confirmed cases:</h4>
+         </div>
+         <div class="txtfmt death-text">
+            <h4>New deaths:</h4>
+         </div>
+         <div class="txtfmt recovered-text">
+            <h4>Newly recovered cases:</h4>
+         </div>
+         <div class="txtfmt totalrecovered-text">
+            <h4>Total recovered cases:</h4>
+         </div>
+         <div class="num-data confirm-num">0</div>
+         <div class="num-data death-num">0</div>
+         <div class="num-data recover-num">0</div>
+         <div class="num-data totalrecov-num">0</div>
       </div>
-      <div class="neutral trck">
-        <button class="button-ui" id="neutralbt"></button>
+      <div class="advice-snippets">
+         <div class="advice-snippets-header">
+            <h3 class="ui-headers">Here's your daily advice:</h3>
+         </div>
+         <div class="advice-text-api">
+         </div>
+         <div class="advice-button-container">
+            <button class="btn btn-advice">Click here for another pick me up.</button>
+         </div>
       </div>
-      <div class="sad trck">
-        <button class="button-ui" id="sadbt"></button>
+      <div class="jobs-api-data">
+         <div class="jobs-search-container">
+            <div class="job-search-header">
+               <h3 class="ui-headers">
+                  Move outside your cocoon & find meaningful COVID-19 proof work.
+                  <br><br>
+                  Search for your next government job here:
+               </h3>
+            </div>
+            <div class="job-searchbar">
+               <form id="jobSearchBarForm">
+                  <input type="text" name="jobSearch" value="" placeholder="Search here." id="jobSearchInput">
+            </div>
+            <div class="job-searchbutton">
+            <input type="button" name="search-button" value="Find me a job!" id="searchButton">
+            </div>
+            <div class="job-disclaimer">
+            </form>
+            <!-- have the "apply here" link send the user to the job that shows up on the API job search SPACE MONO FONT-->
+            <p id="applyHere"></p>
+            </div>
+         </div>
+         <div class="jobs-results-container">
+            <div class="fancyjobref job-title">Job Title:</div>
+            <div class="fancyjobref job-location">Location:</div>
+            <div class="fancyjobref job-salary">Salary:</div>
+            <div class="fancyjobref job-description">Description:</div>
+            <div class="apijobtxt jobapi-title"></div>
+            <div class="apijobtxt jobapi-location"></div>
+            <div class="apijobtxt jobapi-salary"></div>
+            <div class="apijobtxt jobapi-description"></div>
+         </div>
       </div>
-      <div class="overwhelmed trck">
-        <button class="button-ui" id="overwhelmedbt"></button>
-      </div>
-      <div class="stressed trck">
-        <button class="button-ui" id="stressedbt"></button>
-      </div>
-      <div class="worried trck">
-        <button class="button-ui" id="worriedbt"></button>
-      </div>
-      <div class="anxious trck">
-        <button class="button-ui" id="anxiousbt"></button>
-      </div>
-    </div>
-
-    <div class="ui-greeting-text">
-      <h1></h1> <!-- should be filled with localStorage var, dummy for now. -->
-    </div>
-
-    <div class="covid-data">
-      <div class="covid-data-header">
-        <h3 class="ui-headers">Here's the COVID-19 data for today:</h3>
-      </div>
-      <div class="txtfmt confirmed-text">
-        <h4>New confirmed cases:</h4>
-      </div>
-      <div class="txtfmt death-text">
-        <h4>New deaths:</h4>
-      </div>
-      <div class="txtfmt recovered-text">
-        <h4>Newly recovered cases:</h4>
-      </div>
-      <div class="txtfmt totalrecovered-text">
-        <h4>Total recovered cases:</h4>
-      </div>
-
-      <div class="num-data confirm-num">0</div>
-      <div class="num-data death-num">0</div>
-      <div class="num-data recover-num">0</div>
-      <div class="num-data totalrecov-num">0</div>
-    </div>
-
-    <div class="advice-snippets">
-      <div class="advice-snippets-header">
-        <h3 class="ui-headers">Here's your daily advice:</h3>
-      </div>
-      <div class="advice-text-api">
-      </div>
-      <div class="advice-button-container">
-        <button class="btn btn-advice"><p><em>Click here for another pick me up.</em></p></button>
-      </div>
-    </div>
-
-  <div class="jobs-api-data">
-    <div class="jobs-search-container">
-
-      <div class="job-search-header">
-      <h3 class="ui-headers">
-          Move outside your cocoon & find meaningful COVID-19 proof work.
-      <br><br>
-          Search for your next government job here:
-      </h3>
-      </div>
-      <div class="job-searchbar">
-    <form id="jobSearchBarForm">
-        <input type="text" name="jobSearch" value="" placeholder="Search here." id="jobSearchInput">
-      </div>
-      <div class="job-searchbutton">
-        <input type="button" name="search-button" value="Find me a job!" id="searchButton">
-      </div>
-      <div class="job-disclaimer">
-    </form>
-      <!-- have the "apply here" link send the user to the job that shows up on the API job search SPACE MONO FONT-->
-        <p>
-        * like what you see? <br>Apply <strong><a href="">here</a></strong>.<br>
-        If not, spread your wings elsewhere and click the button again for another suggestion.
-        </p>
-      </div>
-    </div>
-    <div class="jobs-results-container">
-      <div class="job-results-header">
-        <h3 class="ui-headers">
-        To take this job or to not take it?
-        </h3>
-      </div>
-      <div id="fancyjobref" class="job-title">Job Title:</div>
-      <div id="fancyjobref" class="job-location">Location:</div>
-      <div id="fancyjobref" class="job-salary">Salary:</div>
-      <div id="fancyjobref" class="job-description">Description:</div>
-      <div id="apijobtxt" class="jobapi-title"></div>
-      <div id="apijobtxt" class="jobapi-location"></div>
-      <div id="apijobtxt" class="jobapi-salary"></div>
-      <div id="apijobtxt" class="jobapi-description"></div>
-    </div>
-  </div>
-
-    <!-- JAVASCRIPT -->
-    <script src="resources/js/userinterfacescript.js"></script>
-
-</body>
+      <!-- JAVASCRIPT -->
+      <script src="resources/js/userinterfacescript.js"></script>
+   </body>
 </html>
 

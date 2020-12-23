@@ -1,77 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-	<title>How are you feeling today?</title>
-	<html lang="en">
-	
-	<!-- META DATA -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@300;400;500&family=Nunito:ital,wght@0,400;0,600;1,400&family=PT+Sans+Caption:wght@400;700&family=Trispace:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- CSS STYLE -->
-    <link href="style.css" rel="stylesheet">
-
-    <!-- JQUERY -->
-    <script src="resources\data\node_modules\jquery\dist\jquery.min.js"></script>
-
-
-</head>
-<body>
-
-<!-- turn this into grid to be responsive! -->
-
-<div class="how-are-you-container">
-    <div class="navbar-hay">
-      <div class="logo-hay">
-          <a href="index.html"><h1>wallflower</h1></a>
+<html lang="en">
+   <head>
+      <title>How are you feeling today?</title>
+      <!-- META DATA -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@300;400;500&family=Nunito:ital,wght@0,400;0,600;1,400&family=PT+Sans+Caption:wght@400;700&family=Trispace:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <!-- CSS STYLE -->
+      <link href="style.css" rel="stylesheet">
+      <!-- JQUERY -->
+      <script src="resources/data/node_modules/jquery/dist/jquery.min.js"></script>
+   </head>
+   <body>
+      <!-- turn this into grid to be responsive! -->
+      <div class="how-are-you-container">
+         <div class="navbar-hay">
+            <div class="logo-hay">
+               <a href="index.html">
+                  <h1>wallflower</h1>
+               </a>
+            </div>
+         </div>
+         <div class="how-are-you">
+            <h2>how are you feeling today?</h2>
+         </div>
+         <!-- make buttons have moving gradient that goes upwards? like a bubble/sloshing? -->
+         <!-- revisit your aboutme page... font? styling? -->
+         <div class="mood-buttons-container-hay">
+            <div class="happy">
+               <a href="userinterface.html"><button class="haybtns" id="happybtny">happy</a></button>
+            </div>
+            <div class="empowered">
+               <a href="userinterface.html"><button class="haybtns" id="empoweredbtny">empowered</a></button>
+            </div>
+            <div class="comfortable">
+               <a href="userinterface.html"><button class="haybtns" id="comfortablebtny">comfortable</a></button>
+            </div>
+            <div class="contant">
+               <a href="userinterface.html"><button class="haybtns" id="contantbtny">content</a></button>
+            </div>
+            <div class="neutral">
+               <a href="userinterface.html"><button class="haybtns" id="neutralbtny">neutral</a></button>
+            </div>
+            <div class="sad">
+               <a href="userinterface.html"><button class="haybtns" id="sadbtny">sad</a></button>
+            </div>
+            <div class="overwhelmed">
+               <a href="userinterface.html"><button class="haybtns" id="overwhelmedbtny">overwhelmed</a></button>
+            </div>
+            <div class="stressed">
+               <a href="userinterface.html"><button class="haybtns" id="stressedbtny">stressed</a></button>
+            </div>
+            <div class="worried">
+               <a href="userinterface.html"><button class="haybtns" id="worriedbtny">worried</a></button>
+            </div>
+            <div class="anxious">
+               <a href="userinterface.html"><button class="haybtns" id="anxiousbtny">anxious</a></button>
+            </div>
+         </div>
       </div>
-    </div>
-    <div class="how-are-you">
-        <h2>how are you feeling today?</h2>
-    </div>
-    <!-- make buttons have moving gradient that goes upwards? like a bubble/sloshing? -->
-    <!-- revisit your aboutme page... font? styling? -->
-    <div class="mood-buttons-container-hay">
-      <div class="happy">
-          <a href="userinterface.html"><button class="haybtns" id="happybtny"><p>happy</p></button></a>
-      </div>
-      <div class="empowered">
-        <a href="userinterface.html"><button class="haybtns" id="empoweredbtny"><p>empowered</p></button></a>
-      </div>
-      <div class="comfortable">
-        <a href="userinterface.html"><button class="haybtns" id="comfortablebtny"><p>comfortable</p></button></a>
-      </div>
-      <div class="contant">
-        <a href="userinterface.html"><button class="haybtns" id="contantbtny"><p>content</p></button></a>
-      </div>
-      <div class="neutral">
-        <a href="userinterface.html"><button class="haybtns" id="neutralbtny"><p>neutral</p></button></a>
-      </div>
-      <div class="sad">
-        <a href="userinterface.html"><button class="haybtns" id="sadbtny"><p>sad</p></button></a>
-      </div>
-      <div class="overwhelmed">
-        <a href="userinterface.html"><button class="haybtns" id="overwhelmedbtny"><p>overwhelmed</p></button></a>
-      </div>
-      <div class="stressed">
-        <a href="userinterface.html"><button class="haybtns" id="stressedbtny"><p>stressed</p></button></a>
-      </div>
-      <div class="worried">
-        <a href="userinterface.html"><button class="haybtns" id="worriedbtny"><p>worried</p></button></a>
-      </div>
-      <div class="anxious">
-        <a href="userinterface.html"><button class="haybtns" id="anxiousbtny"><p>anxious</p></button></a>
-      </div>
-    </div>
-  </div>
-
-<!-- JAVASCRIPT FILES -->
-<script src="resources\js\how-are-you.js"></script>
-
-</body>
+      <!-- JAVASCRIPT FILES -->
+      <script src="resources\js\how-are-you.js"></script>
+   </body>
 </html>
