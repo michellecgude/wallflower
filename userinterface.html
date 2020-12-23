@@ -28,6 +28,7 @@
    <!-- JQUERY -->
    <script src="resources/data/node_modules/jquery/dist/jquery.min.js"></script>
 
+
 </head>
 <body>
 
@@ -99,16 +100,37 @@
     <div class="advice-snippets">
       <div class="advice-snippets-header">
         <h4>Here's your little pocket of sunshine for today:</h4>
-        <h1 id="quote1">“</h1>
       </div>
       <div class="advice-text-api">
-        <!-- API Advice will populate this container. -->
       </div>
       <div class="advice-button-container">
-        <h1 id="quote2">”</h1>
-        <button class="btn btn-advice"><p><em>Need some more advice? Click here for another pick me up.</em></p></button>
+        <button class="btn btn-advice"><p><em>Click here for another pick me up.</em></p></button>
       </div>
     </div>
+
+  <div class="jobs-api-data">
+
+    <div class="jobs-header-text">
+    <h2>Move outside your cocoon & find meaningful, COVID-proof work.</h2>
+    </div>
+      <div class="jobs-data-container">
+          <div class="jobs-search-container">
+            <h4 class="job-search-text">Search for your next job here:</h4>
+          </div>
+
+            <form id="jobSearchBar">
+
+              <input type="text" name="jobSearch" value="" placeholder="Search here." id="jobSearchInput">
+
+              <input type="button" name="searchButton" value="Toggle results" id="searchButton">
+
+            </form>
+          
+          <div class="jobs-search-return">
+      
+          </div>
+        </div>
+  
   </div>
 
     <!-- JAVASCRIPT -->

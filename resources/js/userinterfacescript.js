@@ -54,7 +54,6 @@ const adviceText = document.querySelector(".advice-text-api");
 const adviceButton = document.querySelector(".btn-advice");
 
 
-
 // // Fetch API Data:
 // // generic quote fetch
 fetch(adviceURL)
@@ -64,17 +63,48 @@ fetch(adviceURL)
 
 
 
-// JS Interactivity:
 
-// Button to toggle/randomized advice:
-adviceButton.onclick = function (event) {
-    event.preventDefault();
-    
-    fetch(adviceURL)
+
+
+
+// JOBS API:
+// JOB VARIABLES TO SET UP SEARCH BAR:
+let jobButton = document.querySelector("#searchButton");
+
+jobButton.onclick = function getJobSearchData(evnt) {
+
+    evnt.preventDefault();
+
+    let userJobSearch = document.querySelector("#jobSearchInput").value;
+
+    const jobsURL = `https://data.usajobs.gov/api/search?Keyword=${userJobSearch}`;
+
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization-Key", "LayC1BkiHRhSbxy6Rn0PGulqnmuyDX+VvObEwydaJXU=");
+    myHeaders.append("Cookie", "akavpau_DATA_USAJ=1608688790~id=0e6b539bf4a6ea30a11894596f4f3fa3");
+
+    var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+    };
+
+    fetch(jobsURL, requestOptions)
     .then(response => response.json())
-    .then(response => {adviceText.innerHTML = response.slip.advice})
-    .catch(err => console.log(`I'm sorry, there's no advice for today ${err}`))
+    .then(response => console.log(response))
+    .catch(error => console.log('error', error));
+
 }
+
+
+
+
+
+
+
+
+
+
 
 // FUTURE JQUERY SCRIPT WILL GO HERE.
 document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`); // parses string to just showcase data.
