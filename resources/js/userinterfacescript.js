@@ -61,6 +61,7 @@ fetch(covidURL, {
 	})
 	.catch(err => err)
 
+document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`);
 
 // // RANDOM ADVICE API URL:
 const adviceURL = "https://api.adviceslip.com/advice"
@@ -144,7 +145,4 @@ adviceButton.onclick = function (event) {
 
 				.catch(err => err)
 
-		}
-
-
-		document.querySelector("body > div > div.ui-greeting-text > h1").innerHTML = (`Hey there, ${localStorage.getItem("nameValue")}.`)};
+		}};
