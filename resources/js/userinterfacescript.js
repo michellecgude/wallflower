@@ -90,9 +90,30 @@ jobButton.onclick = function getJobSearchData(evnt) {
     };
 
     fetch(jobsURL, requestOptions)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(error => console.log('error', error));
+        .then(response => response.json())
+        .then(response => {
+            // grab job data html containers for input:
+
+            const jobTitle = document.querySelector("body > div > div.jobs-api-data > div.jobs-results-container > div.jobapi-title")
+            // insert results to HTML:
+            jobTitle.innerHTML = `${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.PositionTitle}`;
+
+
+            const jobLocation = document.querySelector("body > div > div.jobs-api-data > div.jobs-results-container > div.jobapi-location")
+            // insert results to HTML:
+            jobLocation.innerHTML = `${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.PositionLocationDisplay}`;
+
+            const jobSalary = document.querySelector("body > div > div.jobs-api-data > div.jobs-results-container > div.jobapi-salary")
+            // insert results to HTML:
+            jobSalary.innerHTML = `Min: $${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.PositionRemuneration[0].MinimumRange} - Max: $${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.PositionRemuneration[0].MaximumRange}`;
+
+            const jobDescription = document.querySelector("body > div > div.jobs-api-data > div.jobs-results-container > div.jobapi-description")
+            // insert results to HTML:
+            jobDescription.innerHTML = `${response.SearchResult.SearchResultItems[0].MatchedObjectDescriptor.UserArea.Details.MajorDuties}`;
+
+        })
+
+        .catch(error => console.log('error', error));
 
 }
 

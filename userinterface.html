@@ -76,7 +76,7 @@
 
     <div class="covid-data">
       <div class="covid-data-header">
-        <h3>Here's the COVID-19 data for today:</h3>
+        <h3 class="ui-headers">Here's the COVID-19 data for today:</h3>
       </div>
       <div class="txtfmt confirmed-text">
         <h4>New confirmed cases:</h4>
@@ -99,7 +99,7 @@
 
     <div class="advice-snippets">
       <div class="advice-snippets-header">
-        <h4>Here's your little pocket of sunshine for today:</h4>
+        <h3 class="ui-headers">Here's your little pocket of sunshine for today:</h3>
       </div>
       <div class="advice-text-api">
       </div>
@@ -109,47 +109,45 @@
     </div>
 
   <div class="jobs-api-data">
-
-    <div class="jobs-header-text">
-    <h2>Move outside your cocoon & find meaningful, COVID-proof work.</h2>
-    </div>
-      <div class="jobs-data-container">
-          <div class="jobs-search-container">
-            <h4 class="job-search-text">Search for your next job here:</h4>
-          </div>
-
-            <form id="jobSearchBar">
-
-              <input type="text" name="jobSearch" value="" placeholder="Search here." id="jobSearchInput">
-
-              <input type="button" name="searchButton" value="Toggle results" id="searchButton">
-
-            </form>
-          
-          <div class="jobs-search-return">
-      
-          </div>
-        </div>
-  
-  </div>
-
-  <div class="jobs-api-data">
     <div class="jobs-search-container">
-      <div class="job-search-header"></div>
-      <div class="job-searchbar"></div>
-      <div class="job-searchbutton"></div>
-      <div class="job-disclaimer"></div>
+
+      <div class="job-search-header">
+      <h3 class="ui-headers">
+          Move outside your cocoon & find meaningful COVID-19 proof work.
+      <br><br>
+          Search for your next government job here:
+      </h3>
+      </div>
+      <div class="job-searchbar">
+    <form id="jobSearchBarForm">
+        <input type="text" name="jobSearch" value="" placeholder="Search here." id="jobSearchInput">
+      </div>
+      <div class="job-searchbutton">
+        <input type="button" name="searchButton" value="Find me a job!" id="searchButton">
+      </div>
+      <div class="job-disclaimer">
+    </form>
+      <!-- have the "apply here" link send the user to the job that shows up on the API job search SPACE MONO FONT-->
+        <p>
+        * like what you see? Apply <a href="">here</a>.<br>
+        If not, spread your wings elsewhere and click the button again for another suggestion.
+        </p>
+      </div>
     </div>
     <div class="jobs-results-container">
-      <div class="job-results-header"></div>
-      <div class="job-title"></div>
-      <div class="job-location"></div>
-      <div class="job-salary"></div>
-      <div class="job-description"></div>
-      <div class="jobapi-title"></div>
-      <div class="jobapi-location"></div>
-      <div class="jobapi-salary"></div>
-      <div class="jobapi-description"></div>
+      <div class="job-results-header">
+        <h3 class="ui-headers">
+        To take this job or to not take it?
+        </h3>
+      </div>
+      <div id="fancyjobref" class="job-title">Job Title:</div>
+      <div id="fancyjobref" class="job-location">Location:</div>
+      <div id="fancyjobref" class="job-salary">Salary:</div>
+      <div id="fancyjobref" class="job-description">Description:</div>
+      <div id="apijobtxt" class="jobapi-title"></div>
+      <div id="apijobtxt" class="jobapi-location"></div>
+      <div id="apijobtxt" class="jobapi-salary"></div>
+      <div id="apijobtxt" class="jobapi-description"></div>
     </div>
   </div>
 

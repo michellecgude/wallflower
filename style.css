@@ -573,7 +573,7 @@ font-family: "Bikeride";
 color: #F7F1D5;
 font-size: 15px;
 letter-spacing: 3px;
-padding: 30px;
+padding: 3%;
 text-align: center;
 }
 
@@ -584,15 +584,13 @@ grid-template-rows: 1fr;
 gap: 0px 0px;
 grid-template-areas:
 "happy empowered comfortable contant neutral sad overwhelmed stressed worried anxious";
-
-padding-top: 40px;
-
+padding: 3%;
 grid-area: mood-tracker-ui;
 }
 
 .button-ui { 
-width: 50px;
-height: 50px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
 transition: ease-in-out;
 transition-duration: 0.5s;
@@ -676,26 +674,30 @@ background-color: rgb(226, 113, 113);
 
 .ui-greeting-text { 
 font-family: "Monument Regular";
-font-size: 25px;
-font-weight: bolder;
-padding-top: 60px;
-text-align: center;
-grid-area: ui-greeting-text; }
+    font-size: 20px;
+    font-weight: bolder;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    grid-area: ui-greeting-text;}
 
 .covid-data {
-display: grid;
-grid-template-columns: 1.5fr 0.5fr;
-grid-template-rows: 0.5fr 1fr 1.2fr 1.1fr 1.2fr;
-gap: 0px 0px;
-grid-template-areas:
-"covid-data-header covid-data-header"
-"confirmed-text confirm-num"
-"death-text death-num"
-"recovered-text recov-num"
-"totalrecovered-text totalrecov-num";
-grid-area: covid-data;
-padding-top: 150px;
-padding-left: 300px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 1.2fr 1.1fr 1.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "covid-data-header covid-data-header"
+        "confirmed-text confirm-num"
+        "death-text death-num"
+        "recovered-text recov-num"
+        "totalrecovered-text totalrecov-num";
+    grid-area: covid-data;
+    margin-top: 10%;
+    margin-right: 20px;
+    margin-left: 200px;
+    height: fit-content;
+    width: fit-content;
 }
 
 .covid-data-header { 
@@ -705,10 +707,10 @@ padding-left: 300px;
   grid-area: covid-data-header; }
 
 .txtfmt { 
-padding-left: 70px;
-padding-top: 50px;
 font-family: "Monument Regular";
 font-size: 13px;
+text-align: right;
+padding-right: 20px;
 }
 
 .confirmed-text { 
@@ -729,7 +731,6 @@ grid-area: totalrecovered-text; }
 font-family: "Monument Regular";
 letter-spacing: 3px;
 text-align: left;
-padding-top: 50px;
 font-size: 16px;
 }
 
@@ -761,9 +762,12 @@ grid-template-areas:
     "advice-text-api"
     "advice-button-container";
 grid-area: advice-snippets;
-padding-top: 150px;
-padding-right: 300px;
-padding-left: 150px;
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-right: 200px;
+    height: fit-content;
+    width: fit-content;
+
 }
 
 .advice-snippets-header { 
@@ -774,19 +778,10 @@ grid-area: advice-snippets-header; }
 
 .advice-text-api { 
 font-family: "Monument Regular";
-font-size: 25px;
-padding-left: 40px;
-padding-top: 40px;
+padding-left: 10%;
+font-size: 15px;
 line-height: 50px;
 grid-area: advice-text-api; }
-
-#quote1 { 
-padding-top: 50px;
-}
-
-#quote2 { 
-padding-left: 500px;
-}
 
 .advice-button-container {
 display: grid;
@@ -800,83 +795,113 @@ grid-area: advice-button-container;
 
 .btn-advice {
 font-size: 13px;
-width: 675px;
+width: 615px;
 border: none;
 text-align: center;
 outline: none;
 background-color: #ebdfa3;
 font-family: "Bikeride";
 font-size: 24px;
-margin-top: 40px;
-padding: 20px;
+padding: 15px;
 border-radius: 50px;
 letter-spacing: 6px;
 }
+
+
+
+
 
 .jobs-api-data {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "jobs-header-text jobs-data-container jobs-data-container"
-    "jobs-header-text jobs-data-container jobs-data-container";
+    "jobs-search-container jobs-results-container";
   grid-area: jobs-api-data;
-  margin-top: 170px;
+    margin-top: 10%;
+    margin-right: 20px;
+    margin-left: 200px;
+    height: fit-content;
+    width: fit-content;
 }
-
-.jobs-header-text { 
-font-size: 18px;
-font-family: "Monument Regular";
-font-style: italic;
-color:  black;
-letter-spacing: 6px;
-grid-area: jobs-header-text; }
-
-.jobs-data-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "jobs-search-container jobs-search-container jobs-search-container"
-    "jobs-search-return jobs-search-return jobs-search-return";
-  grid-area: jobs-data-container;
-  margin-bottom: 130px;
+.jobs-search-container {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "job-search-header job-search-header job-search-header"
+        "job-searchbar job-searchbar job-searchbar"
+        "job-searchbutton job-disclaimer job-disclaimer";
+    width: fit-content;
+    height: fit-content;
+    grid-area: jobs-search-container;
 }
+.job-search-header { grid-area: job-search-header; }
+.job-searchbar { grid-area: job-searchbar; }
+.job-searchbutton { grid-area: job-searchbutton; }
+.job-disclaimer { grid-area: job-disclaimer; }
 
-.jobs-search-container { 
+.jobs-results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "job-results-header job-results-header"
+        "job-title jobapi-title"
+        "job-location jobapi-location"
+        "job-salary jobapi-salary"
+        "job-description jobapi-description";
+    margin-left: 20px;
+    margin-right: 200px;
+    grid-area: jobs-results-container;
+}
+.job-results-header { 
 
-grid-area: jobs-search-container; }
+grid-area: job-results-header; }
 
-.job-search-text {
-font-size: 18px;
-font-family: "Monument Regular";
-color:  #F7F1D5;
-letter-spacing: 6px;}
+.job-title { 
+grid-area: job-title; }
 
-.jobs-search-return { 
+.job-location { 
+grid-area: job-location; }
 
-grid-area: jobs-search-return; }
+.job-salary { 
+grid-area: job-salary; }
 
+.job-description { 
+grid-area: job-description; }
+
+.jobapi-title { 
+grid-area: jobapi-title; }
+
+.jobapi-location { 
+grid-area: jobapi-location; }
+
+.jobapi-salary { 
+grid-area: jobapi-salary; }
+
+.jobapi-description { 
+grid-area: jobapi-description; }
+
+/* make more dynamic! just for testing...: */
 #jobSearchInput {
-font-size: 13px;
+font-size: 16px;
 width: 675px;
 border: none;
-text-align: center;
+text-align: left;
 outline: none;
 background-color: #ebdfa3;
 font-family: "Bikeride";
 font-size: 24px;
-margin-top: 40px;
-padding: 20px;
+padding: 13px;
 border-radius: 50px;
-letter-spacing: 6px;
-}
-
+letter-spacing: 6px;}
 
 #searchButton {
-font-size: 10px;
+font-size: 13px;
 width: 300px;
 border: none;
 text-align: center;
@@ -884,11 +909,30 @@ outline: none;
 background-color: #ebdfa3;
 font-family: "Bikeride";
 font-size: 24px;
-margin-top: 40px;
 padding: 20px;
 border-radius: 50px;
 letter-spacing: 6px;}
 
-/* make more dynamic! just for testing...: */
+
 #searchButton:hover {
 background-color:#e0a0a0}
+
+.ui-headers {
+font-size: 15px;
+font-family: "Monument Regular";
+height: 40px;
+color:  #F7F1D5;
+letter-spacing: 6px;}
+
+#fancyjobref {
+font-family: "Bikeride";
+font-size: 15px;
+}
+
+#apijobtxt {
+font-family: "Space Mono";
+font-size: 13px;}
+
+.job-disclaimer > p {
+font-family: "Space Mono";
+}
