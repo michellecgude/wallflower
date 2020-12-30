@@ -43,13 +43,13 @@ In terms of my unsolved problems, the main things that I had to leave unsolved w
 
 > _"You know what, I'm gonna throw another API in here and see if I can challenge myself at making a search bar, etc. because I'd love to eventually integrate a job search functionality with the app down the line, so, why not try something like that now?"_ 
 
-Well, now it's pretty late (like 4am late), so, I decided to turn in everything once I got the API working. As someone who _loves_ CSS, it's a bit hard not perfecting that for the project, but, I definitely need sleep! (Although, I'm a huge night owl, so, I'll be fine). _(So, just an fyi, please excuse the wonky spacing, lack of transitions, UX/UI considerations for the interface, etc !!!)_
+Well, now it's pretty late (like 4am late), so, I decided to turn in everything once I got the API working. As someone who _loves_ CSS, it's a bit hard not perfecting that for the project. _(So, just an fyi, please excuse the wonky spacing, lack of transitions, UX/UI considerations for the interface, etc !!!)_
 
 Biggest hurdles I honestly had (and continue to have), is making the website responsive and working well with all browser sizes, (and eventually mobile), etc. The website only currently looks perfect on my wide monitor at 100% (and my laptop at 85%). But, other than that, nothing too major in terms of difficulty.
 
-## :rainbow: next steps, future concept (aka, i'm definitely working on this over christmas break and through the new year) : 
+## :rainbow: next steps, future concept : 
 
-_will add to this later... this will contain future wireframes, concept art, formal board of the potential "brand" of wallflower. currently under construction._
+_Currently under construction. Be on the lookout for a future/new repo for Wallflower 2.0..._
 
 ## GitHub Links:
 `Initial Issue/Concept:` https://git.generalassemb.ly/SEIR-1130/project-1/issues/5
